@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43E700002184924E00FA2F3D /* IdolDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFFE2184924E00FA2F3D /* IdolDetailViewController.swift */; };
+		43E700012184924E00FA2F3D /* IdolDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFFF2184924E00FA2F3D /* IdolDetailViewController.xib */; };
+		43E700042184961F00FA2F3D /* ShuihuRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E700022184961F00FA2F3D /* ShuihuRankViewController.swift */; };
+		43E700052184961F00FA2F3D /* ShuihuRankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E700032184961F00FA2F3D /* ShuihuRankViewController.xib */; };
+		43E700082184962E00FA2F3D /* ShuihuWikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E700062184962E00FA2F3D /* ShuihuWikiViewController.swift */; };
+		43E700092184962E00FA2F3D /* ShuihuWikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E700072184962E00FA2F3D /* ShuihuWikiViewController.xib */; };
+		43E7000C2184963C00FA2F3D /* ShuihuDrawCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7000A2184963C00FA2F3D /* ShuihuDrawCardViewController.swift */; };
+		43E7000D2184963C00FA2F3D /* ShuihuDrawCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7000B2184963C00FA2F3D /* ShuihuDrawCardViewController.xib */; };
+		43E700102184964E00FA2F3D /* ShuihuShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7000E2184964E00FA2F3D /* ShuihuShareViewController.swift */; };
+		43E700112184964E00FA2F3D /* ShuihuShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7000F2184964E00FA2F3D /* ShuihuShareViewController.xib */; };
+		43E700142184965D00FA2F3D /* ShuihuTransViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E700122184965D00FA2F3D /* ShuihuTransViewController.swift */; };
+		43E700152184965D00FA2F3D /* ShuihuTransViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E700132184965D00FA2F3D /* ShuihuTransViewController.xib */; };
+		43E700182184973100FA2F3D /* ShuihuCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E700162184973100FA2F3D /* ShuihuCardDetailViewController.swift */; };
+		43E700192184973100FA2F3D /* ShuihuCardDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E700172184973100FA2F3D /* ShuihuCardDetailViewController.xib */; };
+		43E7FF9C2184534D00FA2F3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FF9B2184534D00FA2F3D /* AppDelegate.swift */; };
+		43E7FFA32184534F00FA2F3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFA22184534F00FA2F3D /* Assets.xcassets */; };
+		43E7FFA62184534F00FA2F3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFA42184534F00FA2F3D /* LaunchScreen.storyboard */; };
+		43E7FFB1218484AD00FA2F3D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFAF218484AD00FA2F3D /* MainViewController.swift */; };
+		43E7FFB2218484AD00FA2F3D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFB0218484AD00FA2F3D /* MainViewController.xib */; };
+		43E7FFBD2184896700FA2F3D /* SanguoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFBB2184896700FA2F3D /* SanguoMainViewController.swift */; };
+		43E7FFBE2184896700FA2F3D /* SanguoMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFBC2184896700FA2F3D /* SanguoMainViewController.xib */; };
+		43E7FFC121848A7400FA2F3D /* ShuihuMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFBF21848A7400FA2F3D /* ShuihuMainViewController.swift */; };
+		43E7FFC221848A7400FA2F3D /* ShuihuMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFC021848A7400FA2F3D /* ShuihuMainViewController.xib */; };
+		43E7FFC521848A8100FA2F3D /* MoeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFC321848A8100FA2F3D /* MoeMainViewController.swift */; };
+		43E7FFC621848A8100FA2F3D /* MoeMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFC421848A8100FA2F3D /* MoeMainViewController.xib */; };
+		43E7FFCA21848AAF00FA2F3D /* IdolLinkMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFC821848AAF00FA2F3D /* IdolLinkMainViewController.swift */; };
+		43E7FFCB21848AAF00FA2F3D /* IdolLinkMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFC921848AAF00FA2F3D /* IdolLinkMainViewController.xib */; };
+		43E7FFCF21848B0A00FA2F3D /* MeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFCD21848B0A00FA2F3D /* MeMainViewController.swift */; };
+		43E7FFD021848B0A00FA2F3D /* MeMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFCE21848B0A00FA2F3D /* MeMainViewController.xib */; };
+		43E7FFD321848D0400FA2F3D /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFD121848D0400FA2F3D /* TransactionViewController.swift */; };
+		43E7FFD421848D0400FA2F3D /* TransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFD221848D0400FA2F3D /* TransactionViewController.xib */; };
+		43E7FFD821848D1C00FA2F3D /* AssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFD621848D1C00FA2F3D /* AssetsViewController.swift */; };
+		43E7FFD921848D1C00FA2F3D /* AssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFD721848D1C00FA2F3D /* AssetsViewController.xib */; };
+		43E7FFDC21848F6D00FA2F3D /* SanguoStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFDA21848F6D00FA2F3D /* SanguoStoreViewController.swift */; };
+		43E7FFDD21848F6D00FA2F3D /* SanguoStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFDB21848F6D00FA2F3D /* SanguoStoreViewController.xib */; };
+		43E7FFE021848F8800FA2F3D /* SanguoWikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFDE21848F8800FA2F3D /* SanguoWikiViewController.swift */; };
+		43E7FFE121848F8800FA2F3D /* SanguoWikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFDF21848F8800FA2F3D /* SanguoWikiViewController.xib */; };
+		43E7FFE421848FA200FA2F3D /* SanguoTransViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFE221848FA200FA2F3D /* SanguoTransViewController.swift */; };
+		43E7FFE521848FA200FA2F3D /* SanguoTransViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFE321848FA200FA2F3D /* SanguoTransViewController.xib */; };
+		43E7FFE821848FBE00FA2F3D /* SanguoHeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFE621848FBE00FA2F3D /* SanguoHeroDetailViewController.swift */; };
+		43E7FFE921848FBE00FA2F3D /* SanguoHeroDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFE721848FBE00FA2F3D /* SanguoHeroDetailViewController.xib */; };
+		43E7FFEC2184914900FA2F3D /* SanguoDrawCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFEA2184914900FA2F3D /* SanguoDrawCardViewController.swift */; };
+		43E7FFED2184914900FA2F3D /* SanguoDrawCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFEB2184914900FA2F3D /* SanguoDrawCardViewController.xib */; };
+		43E7FFF02184919400FA2F3D /* MoeCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFEE2184919400FA2F3D /* MoeCardDetailViewController.swift */; };
+		43E7FFF12184919400FA2F3D /* MoeCardDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFEF2184919400FA2F3D /* MoeCardDetailViewController.xib */; };
+		43E7FFF42184921A00FA2F3D /* IdolDrawCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFF22184921A00FA2F3D /* IdolDrawCardViewController.swift */; };
+		43E7FFF52184921A00FA2F3D /* IdolDrawCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFF32184921A00FA2F3D /* IdolDrawCardViewController.xib */; };
+		43E7FFF82184922D00FA2F3D /* IdolRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFF62184922D00FA2F3D /* IdolRankViewController.swift */; };
+		43E7FFF92184922D00FA2F3D /* IdolRankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFF72184922D00FA2F3D /* IdolRankViewController.xib */; };
+		43E7FFFC2184923D00FA2F3D /* IdolShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFFA2184923D00FA2F3D /* IdolShareViewController.swift */; };
+		43E7FFFD2184923D00FA2F3D /* IdolShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFFB2184923D00FA2F3D /* IdolShareViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43E700022184961F00FA2F3D /* ShuihuRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuihuRankViewController.swift; sourceTree = "<group>"; };
+		43E700032184961F00FA2F3D /* ShuihuRankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuihuRankViewController.xib; sourceTree = "<group>"; };
+		43E700062184962E00FA2F3D /* ShuihuWikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuihuWikiViewController.swift; sourceTree = "<group>"; };
+		43E700072184962E00FA2F3D /* ShuihuWikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuihuWikiViewController.xib; sourceTree = "<group>"; };
+		43E7000A2184963C00FA2F3D /* ShuihuDrawCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuihuDrawCardViewController.swift; sourceTree = "<group>"; };
+		43E7000B2184963C00FA2F3D /* ShuihuDrawCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuihuDrawCardViewController.xib; sourceTree = "<group>"; };
+		43E7000E2184964E00FA2F3D /* ShuihuShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuihuShareViewController.swift; sourceTree = "<group>"; };
+		43E7000F2184964E00FA2F3D /* ShuihuShareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuihuShareViewController.xib; sourceTree = "<group>"; };
+		43E700122184965D00FA2F3D /* ShuihuTransViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuihuTransViewController.swift; sourceTree = "<group>"; };
+		43E700132184965D00FA2F3D /* ShuihuTransViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuihuTransViewController.xib; sourceTree = "<group>"; };
+		43E700162184973100FA2F3D /* ShuihuCardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuihuCardDetailViewController.swift; sourceTree = "<group>"; };
+		43E700172184973100FA2F3D /* ShuihuCardDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuihuCardDetailViewController.xib; sourceTree = "<group>"; };
+		43E7FF982184534D00FA2F3D /* cryptoios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cryptoios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E7FF9B2184534D00FA2F3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43E7FFA22184534F00FA2F3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43E7FFA52184534F00FA2F3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43E7FFA72184534F00FA2F3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E7FFAF218484AD00FA2F3D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		43E7FFB0218484AD00FA2F3D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		43E7FFBB2184896700FA2F3D /* SanguoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoMainViewController.swift; sourceTree = "<group>"; };
+		43E7FFBC2184896700FA2F3D /* SanguoMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanguoMainViewController.xib; sourceTree = "<group>"; };
+		43E7FFBF21848A7400FA2F3D /* ShuihuMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuihuMainViewController.swift; sourceTree = "<group>"; };
+		43E7FFC021848A7400FA2F3D /* ShuihuMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuihuMainViewController.xib; sourceTree = "<group>"; };
+		43E7FFC321848A8100FA2F3D /* MoeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoeMainViewController.swift; sourceTree = "<group>"; };
+		43E7FFC421848A8100FA2F3D /* MoeMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoeMainViewController.xib; sourceTree = "<group>"; };
+		43E7FFC821848AAF00FA2F3D /* IdolLinkMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolLinkMainViewController.swift; sourceTree = "<group>"; };
+		43E7FFC921848AAF00FA2F3D /* IdolLinkMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdolLinkMainViewController.xib; sourceTree = "<group>"; };
+		43E7FFCD21848B0A00FA2F3D /* MeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeMainViewController.swift; sourceTree = "<group>"; };
+		43E7FFCE21848B0A00FA2F3D /* MeMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeMainViewController.xib; sourceTree = "<group>"; };
+		43E7FFD121848D0400FA2F3D /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		43E7FFD221848D0400FA2F3D /* TransactionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionViewController.xib; sourceTree = "<group>"; };
+		43E7FFD621848D1C00FA2F3D /* AssetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsViewController.swift; sourceTree = "<group>"; };
+		43E7FFD721848D1C00FA2F3D /* AssetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetsViewController.xib; sourceTree = "<group>"; };
+		43E7FFDA21848F6D00FA2F3D /* SanguoStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoStoreViewController.swift; sourceTree = "<group>"; };
+		43E7FFDB21848F6D00FA2F3D /* SanguoStoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanguoStoreViewController.xib; sourceTree = "<group>"; };
+		43E7FFDE21848F8800FA2F3D /* SanguoWikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoWikiViewController.swift; sourceTree = "<group>"; };
+		43E7FFDF21848F8800FA2F3D /* SanguoWikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanguoWikiViewController.xib; sourceTree = "<group>"; };
+		43E7FFE221848FA200FA2F3D /* SanguoTransViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoTransViewController.swift; sourceTree = "<group>"; };
+		43E7FFE321848FA200FA2F3D /* SanguoTransViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanguoTransViewController.xib; sourceTree = "<group>"; };
+		43E7FFE621848FBE00FA2F3D /* SanguoHeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoHeroDetailViewController.swift; sourceTree = "<group>"; };
+		43E7FFE721848FBE00FA2F3D /* SanguoHeroDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanguoHeroDetailViewController.xib; sourceTree = "<group>"; };
+		43E7FFEA2184914900FA2F3D /* SanguoDrawCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoDrawCardViewController.swift; sourceTree = "<group>"; };
+		43E7FFEB2184914900FA2F3D /* SanguoDrawCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanguoDrawCardViewController.xib; sourceTree = "<group>"; };
+		43E7FFEE2184919400FA2F3D /* MoeCardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoeCardDetailViewController.swift; sourceTree = "<group>"; };
+		43E7FFEF2184919400FA2F3D /* MoeCardDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoeCardDetailViewController.xib; sourceTree = "<group>"; };
+		43E7FFF22184921A00FA2F3D /* IdolDrawCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolDrawCardViewController.swift; sourceTree = "<group>"; };
+		43E7FFF32184921A00FA2F3D /* IdolDrawCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdolDrawCardViewController.xib; sourceTree = "<group>"; };
+		43E7FFF62184922D00FA2F3D /* IdolRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolRankViewController.swift; sourceTree = "<group>"; };
+		43E7FFF72184922D00FA2F3D /* IdolRankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdolRankViewController.xib; sourceTree = "<group>"; };
+		43E7FFFA2184923D00FA2F3D /* IdolShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolShareViewController.swift; sourceTree = "<group>"; };
+		43E7FFFB2184923D00FA2F3D /* IdolShareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdolShareViewController.xib; sourceTree = "<group>"; };
+		43E7FFFE2184924E00FA2F3D /* IdolDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolDetailViewController.swift; sourceTree = "<group>"; };
+		43E7FFFF2184924E00FA2F3D /* IdolDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdolDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43E7FF952184534D00FA2F3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43E7FF8F2184534D00FA2F3D = {
+			isa = PBXGroup;
+			children = (
+				43E7FF9A2184534D00FA2F3D /* cryptoios */,
+				43E7FF992184534D00FA2F3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43E7FF992184534D00FA2F3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43E7FF982184534D00FA2F3D /* cryptoios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43E7FF9A2184534D00FA2F3D /* cryptoios */ = {
+			isa = PBXGroup;
+			children = (
+				43E7FFAD2184848600FA2F3D /* ViewControlelrs */,
+				43E7FF9B2184534D00FA2F3D /* AppDelegate.swift */,
+				43E7FFA22184534F00FA2F3D /* Assets.xcassets */,
+				43E7FFA42184534F00FA2F3D /* LaunchScreen.storyboard */,
+				43E7FFA72184534F00FA2F3D /* Info.plist */,
+			);
+			path = cryptoios;
+			sourceTree = "<group>";
+		};
+		43E7FFAD2184848600FA2F3D /* ViewControlelrs */ = {
+			isa = PBXGroup;
+			children = (
+				43E7FFCC21848AFB00FA2F3D /* Me */,
+				43E7FFC721848A8500FA2F3D /* IdolLink */,
+				43E7FFBA2184877D00FA2F3D /* Moe */,
+				43E7FFB92184876E00FA2F3D /* Shuihu */,
+				43E7FFB82184876600FA2F3D /* Sanguo */,
+				43E7FFAE2184849200FA2F3D /* AppMain */,
+			);
+			path = ViewControlelrs;
+			sourceTree = "<group>";
+		};
+		43E7FFAE2184849200FA2F3D /* AppMain */ = {
+			isa = PBXGroup;
+			children = (
+				43E7FFAF218484AD00FA2F3D /* MainViewController.swift */,
+				43E7FFB0218484AD00FA2F3D /* MainViewController.xib */,
+			);
+			path = AppMain;
+			sourceTree = "<group>";
+		};
+		43E7FFB82184876600FA2F3D /* Sanguo */ = {
+			isa = PBXGroup;
+			children = (
+				43E7FFBB2184896700FA2F3D /* SanguoMainViewController.swift */,
+				43E7FFBC2184896700FA2F3D /* SanguoMainViewController.xib */,
+				43E7FFDA21848F6D00FA2F3D /* SanguoStoreViewController.swift */,
+				43E7FFDB21848F6D00FA2F3D /* SanguoStoreViewController.xib */,
+				43E7FFDE21848F8800FA2F3D /* SanguoWikiViewController.swift */,
+				43E7FFDF21848F8800FA2F3D /* SanguoWikiViewController.xib */,
+				43E7FFE221848FA200FA2F3D /* SanguoTransViewController.swift */,
+				43E7FFE321848FA200FA2F3D /* SanguoTransViewController.xib */,
+				43E7FFE621848FBE00FA2F3D /* SanguoHeroDetailViewController.swift */,
+				43E7FFE721848FBE00FA2F3D /* SanguoHeroDetailViewController.xib */,
+				43E7FFEA2184914900FA2F3D /* SanguoDrawCardViewController.swift */,
+				43E7FFEB2184914900FA2F3D /* SanguoDrawCardViewController.xib */,
+			);
+			path = Sanguo;
+			sourceTree = "<group>";
+		};
+		43E7FFB92184876E00FA2F3D /* Shuihu */ = {
+			isa = PBXGroup;
+			children = (
+				43E7FFBF21848A7400FA2F3D /* ShuihuMainViewController.swift */,
+				43E7FFC021848A7400FA2F3D /* ShuihuMainViewController.xib */,
+				43E700122184965D00FA2F3D /* ShuihuTransViewController.swift */,
+				43E700132184965D00FA2F3D /* ShuihuTransViewController.xib */,
+				43E700022184961F00FA2F3D /* ShuihuRankViewController.swift */,
+				43E700032184961F00FA2F3D /* ShuihuRankViewController.xib */,
+				43E700062184962E00FA2F3D /* ShuihuWikiViewController.swift */,
+				43E700072184962E00FA2F3D /* ShuihuWikiViewController.xib */,
+				43E7000A2184963C00FA2F3D /* ShuihuDrawCardViewController.swift */,
+				43E7000B2184963C00FA2F3D /* ShuihuDrawCardViewController.xib */,
+				43E7000E2184964E00FA2F3D /* ShuihuShareViewController.swift */,
+				43E7000F2184964E00FA2F3D /* ShuihuShareViewController.xib */,
+				43E700162184973100FA2F3D /* ShuihuCardDetailViewController.swift */,
+				43E700172184973100FA2F3D /* ShuihuCardDetailViewController.xib */,
+			);
+			path = Shuihu;
+			sourceTree = "<group>";
+		};
+		43E7FFBA2184877D00FA2F3D /* Moe */ = {
+			isa = PBXGroup;
+			children = (
+				43E7FFC321848A8100FA2F3D /* MoeMainViewController.swift */,
+				43E7FFC421848A8100FA2F3D /* MoeMainViewController.xib */,
+				43E7FFEE2184919400FA2F3D /* MoeCardDetailViewController.swift */,
+				43E7FFEF2184919400FA2F3D /* MoeCardDetailViewController.xib */,
+			);
+			path = Moe;
+			sourceTree = "<group>";
+		};
+		43E7FFC721848A8500FA2F3D /* IdolLink */ = {
+			isa = PBXGroup;
+			children = (
+				43E7FFC821848AAF00FA2F3D /* IdolLinkMainViewController.swift */,
+				43E7FFC921848AAF00FA2F3D /* IdolLinkMainViewController.xib */,
+				43E7FFF22184921A00FA2F3D /* IdolDrawCardViewController.swift */,
+				43E7FFF32184921A00FA2F3D /* IdolDrawCardViewController.xib */,
+				43E7FFF62184922D00FA2F3D /* IdolRankViewController.swift */,
+				43E7FFF72184922D00FA2F3D /* IdolRankViewController.xib */,
+				43E7FFFA2184923D00FA2F3D /* IdolShareViewController.swift */,
+				43E7FFFB2184923D00FA2F3D /* IdolShareViewController.xib */,
+				43E7FFFE2184924E00FA2F3D /* IdolDetailViewController.swift */,
+				43E7FFFF2184924E00FA2F3D /* IdolDetailViewController.xib */,
+			);
+			path = IdolLink;
+			sourceTree = "<group>";
+		};
+		43E7FFCC21848AFB00FA2F3D /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				43E7FFCD21848B0A00FA2F3D /* MeMainViewController.swift */,
+				43E7FFCE21848B0A00FA2F3D /* MeMainViewController.xib */,
+				43E7FFD121848D0400FA2F3D /* TransactionViewController.swift */,
+				43E7FFD221848D0400FA2F3D /* TransactionViewController.xib */,
+				43E7FFD621848D1C00FA2F3D /* AssetsViewController.swift */,
+				43E7FFD721848D1C00FA2F3D /* AssetsViewController.xib */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43E7FF972184534D00FA2F3D /* cryptoios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E7FFAA2184534F00FA2F3D /* Build configuration list for PBXNativeTarget "cryptoios" */;
+			buildPhases = (
+				43E7FF942184534D00FA2F3D /* Sources */,
+				43E7FF952184534D00FA2F3D /* Frameworks */,
+				43E7FF962184534D00FA2F3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cryptoios;
+			productName = cryptoios;
+			productReference = 43E7FF982184534D00FA2F3D /* cryptoios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43E7FF902184534D00FA2F3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = udspj;
+				TargetAttributes = {
+					43E7FF972184534D00FA2F3D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 43E7FF932184534D00FA2F3D /* Build configuration list for PBXProject "cryptoios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43E7FF8F2184534D00FA2F3D;
+			productRefGroup = 43E7FF992184534D00FA2F3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43E7FF972184534D00FA2F3D /* cryptoios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43E7FF962184534D00FA2F3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E7FFDD21848F6D00FA2F3D /* SanguoStoreViewController.xib in Resources */,
+				43E7FFA62184534F00FA2F3D /* LaunchScreen.storyboard in Resources */,
+				43E7FFA32184534F00FA2F3D /* Assets.xcassets in Resources */,
+				43E7FFB2218484AD00FA2F3D /* MainViewController.xib in Resources */,
+				43E7FFED2184914900FA2F3D /* SanguoDrawCardViewController.xib in Resources */,
+				43E700052184961F00FA2F3D /* ShuihuRankViewController.xib in Resources */,
+				43E700112184964E00FA2F3D /* ShuihuShareViewController.xib in Resources */,
+				43E7FFC621848A8100FA2F3D /* MoeMainViewController.xib in Resources */,
+				43E7FFC221848A7400FA2F3D /* ShuihuMainViewController.xib in Resources */,
+				43E7FFCB21848AAF00FA2F3D /* IdolLinkMainViewController.xib in Resources */,
+				43E7000D2184963C00FA2F3D /* ShuihuDrawCardViewController.xib in Resources */,
+				43E7FFF92184922D00FA2F3D /* IdolRankViewController.xib in Resources */,
+				43E700092184962E00FA2F3D /* ShuihuWikiViewController.xib in Resources */,
+				43E7FFBE2184896700FA2F3D /* SanguoMainViewController.xib in Resources */,
+				43E7FFE521848FA200FA2F3D /* SanguoTransViewController.xib in Resources */,
+				43E7FFD921848D1C00FA2F3D /* AssetsViewController.xib in Resources */,
+				43E7FFE121848F8800FA2F3D /* SanguoWikiViewController.xib in Resources */,
+				43E7FFF52184921A00FA2F3D /* IdolDrawCardViewController.xib in Resources */,
+				43E7FFD021848B0A00FA2F3D /* MeMainViewController.xib in Resources */,
+				43E700012184924E00FA2F3D /* IdolDetailViewController.xib in Resources */,
+				43E7FFFD2184923D00FA2F3D /* IdolShareViewController.xib in Resources */,
+				43E700152184965D00FA2F3D /* ShuihuTransViewController.xib in Resources */,
+				43E7FFF12184919400FA2F3D /* MoeCardDetailViewController.xib in Resources */,
+				43E700192184973100FA2F3D /* ShuihuCardDetailViewController.xib in Resources */,
+				43E7FFE921848FBE00FA2F3D /* SanguoHeroDetailViewController.xib in Resources */,
+				43E7FFD421848D0400FA2F3D /* TransactionViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43E7FF942184534D00FA2F3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E7FFB1218484AD00FA2F3D /* MainViewController.swift in Sources */,
+				43E7FFC521848A8100FA2F3D /* MoeMainViewController.swift in Sources */,
+				43E7FFD821848D1C00FA2F3D /* AssetsViewController.swift in Sources */,
+				43E7FFDC21848F6D00FA2F3D /* SanguoStoreViewController.swift in Sources */,
+				43E7FFF42184921A00FA2F3D /* IdolDrawCardViewController.swift in Sources */,
+				43E7FFCA21848AAF00FA2F3D /* IdolLinkMainViewController.swift in Sources */,
+				43E7000C2184963C00FA2F3D /* ShuihuDrawCardViewController.swift in Sources */,
+				43E700142184965D00FA2F3D /* ShuihuTransViewController.swift in Sources */,
+				43E700042184961F00FA2F3D /* ShuihuRankViewController.swift in Sources */,
+				43E700002184924E00FA2F3D /* IdolDetailViewController.swift in Sources */,
+				43E700182184973100FA2F3D /* ShuihuCardDetailViewController.swift in Sources */,
+				43E7FFCF21848B0A00FA2F3D /* MeMainViewController.swift in Sources */,
+				43E7FFE421848FA200FA2F3D /* SanguoTransViewController.swift in Sources */,
+				43E7FFFC2184923D00FA2F3D /* IdolShareViewController.swift in Sources */,
+				43E7FFBD2184896700FA2F3D /* SanguoMainViewController.swift in Sources */,
+				43E7FFE021848F8800FA2F3D /* SanguoWikiViewController.swift in Sources */,
+				43E700082184962E00FA2F3D /* ShuihuWikiViewController.swift in Sources */,
+				43E7FFEC2184914900FA2F3D /* SanguoDrawCardViewController.swift in Sources */,
+				43E700102184964E00FA2F3D /* ShuihuShareViewController.swift in Sources */,
+				43E7FFE821848FBE00FA2F3D /* SanguoHeroDetailViewController.swift in Sources */,
+				43E7FFF82184922D00FA2F3D /* IdolRankViewController.swift in Sources */,
+				43E7FF9C2184534D00FA2F3D /* AppDelegate.swift in Sources */,
+				43E7FFC121848A7400FA2F3D /* ShuihuMainViewController.swift in Sources */,
+				43E7FFF02184919400FA2F3D /* MoeCardDetailViewController.swift in Sources */,
+				43E7FFD321848D0400FA2F3D /* TransactionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43E7FFA42184534F00FA2F3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43E7FFA52184534F00FA2F3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43E7FFA82184534F00FA2F3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43E7FFA92184534F00FA2F3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43E7FFAB2184534F00FA2F3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = cryptoios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.udspj.cryptoios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43E7FFAC2184534F00FA2F3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = cryptoios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.udspj.cryptoios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43E7FF932184534D00FA2F3D /* Build configuration list for PBXProject "cryptoios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E7FFA82184534F00FA2F3D /* Debug */,
+				43E7FFA92184534F00FA2F3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43E7FFAA2184534F00FA2F3D /* Build configuration list for PBXNativeTarget "cryptoios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E7FFAB2184534F00FA2F3D /* Debug */,
+				43E7FFAC2184534F00FA2F3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43E7FF902184534D00FA2F3D /* Project object */;
+}
