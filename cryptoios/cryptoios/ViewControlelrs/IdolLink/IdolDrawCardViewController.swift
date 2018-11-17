@@ -9,22 +9,17 @@
 import UIKit
 
 class IdolDrawCardViewController: UIViewController {
-
+    
+    @IBOutlet var label1: UILabel!
+    
+    @IBOutlet var label2: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = "幸运抽卡"
+        let num = 2099999;
+        let price = 0.009
+        label1.text = "目前卡池可抽数量：\(num)张，卡牌限量，先到先的"
+        label2.text = "目前抽卡费：\n\(price) NAS/张"
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

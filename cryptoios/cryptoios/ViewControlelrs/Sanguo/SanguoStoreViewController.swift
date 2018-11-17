@@ -10,21 +10,33 @@ import UIKit
 
 class SanguoStoreViewController: UIViewController {
 
+    @IBOutlet var view1: UIView!
+    
+    @IBOutlet var sectionView1: UIView!
+    @IBOutlet var sectionView2: UIView!
+    @IBOutlet var sectionView3: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        for v in [sectionView1, sectionView2, sectionView3] {
+            v!.layer.borderWidth = 1
+            v!.layer.borderColor = UIColor.white.cgColor
+        }
+        
+        changeToSection(idx: 0)
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func sectionChanged(_ sender: Any) {
+        let seg = sender as! UISegmentedControl
+        
+        let idx = seg.selectedSegmentIndex
+        changeToSection(idx: idx)
     }
-    */
-
+    
+    func changeToSection(idx:Int)  {
+        sectionView1.isHidden = idx != 0
+        sectionView2.isHidden = idx != 1
+        sectionView3.isHidden = idx != 2
+    }
 }

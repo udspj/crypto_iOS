@@ -1,22 +1,288 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SanguoStoreViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SanguoStoreViewController" customModule="cryptoios" customModuleProvider="target">
             <connections>
+                <outlet property="sectionView1" destination="Ne4-GU-8jv" id="NIf-UU-zkd"/>
+                <outlet property="sectionView2" destination="xCO-fB-xZb" id="fGt-dD-QuW"/>
+                <outlet property="sectionView3" destination="rSe-sS-rXg" id="3Dh-U8-t38"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1154"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ga-a0-GZN">
+                    <rect key="frame" x="0.0" y="20" width="375" height="1134"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y15-AV-gF5">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/packViewBg" translatesAutoresizingMaskIntoConstraints="NO" id="OMI-IH-5Xx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="242"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="242" id="zQd-Y7-dLM"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/packBg" translatesAutoresizingMaskIntoConstraints="NO" id="ccq-Wx-GrA">
+                                    <rect key="frame" x="20" y="10" width="335" height="242"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="242" id="WYl-P7-qya"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卡包剩余：168张卡牌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6M-8S-ioa">
+                                    <rect key="frame" x="123" y="183" width="129" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="129" id="qjY-Xn-wZM"/>
+                                        <constraint firstAttribute="height" constant="16" id="u8v-ct-z4N"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <color key="textColor" red="0.78431372549019607" green="0.56862745098039214" blue="0.19215686274509805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mga-JA-Jg0">
+                                    <rect key="frame" x="108" y="183" width="159" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="159" id="Eo9-Zu-JE5"/>
+                                        <constraint firstAttribute="height" constant="48" id="qVg-YU-dxx"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                    <color key="tintColor" red="0.7843137255" green="0.56862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="立即抽卡(0)" backgroundImage="sanguo/button_chouka"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帮助： 以太三国创新推出全新的区块链抽卡玩法。 通过抽卡方法获得武将卡，将会是唯一的官方卡牌发售渠道。 智能卡包中当前包含的卡牌和中奖概率完全公开透明。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyJ-Rs-pAM">
+                                    <rect key="frame" x="20" y="260" width="335" height="72"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="72" id="kBL-zF-Gwb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.69411764705882351" green="0.62745098039215685" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LDu-jk-HSR" customClass="SanguoSegmentedControl" customModule="cryptoios" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="340" width="335" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="tRL-FC-yQB"/>
+                                    </constraints>
+                                    <segments>
+                                        <segment title="三国卡牌"/>
+                                        <segment title="抽卡广播"/>
+                                        <segment title="幸运币"/>
+                                    </segments>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="sanguo/button_seleted"/>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="sanguo/button_def"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="sectionChanged:" destination="-1" eventType="valueChanged" id="GGe-94-n0V"/>
+                                    </connections>
+                                </segmentedControl>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ne4-GU-8jv">
+                                    <rect key="frame" x="40" y="395" width="295" height="300"/>
+                                    <subviews>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MY1-vw-CWt" customClass="SanguoSegmentedControl" customModule="cryptoios" customModuleProvider="target">
+                                            <rect key="frame" x="30" y="10" width="235" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="XEa-gY-x3t"/>
+                                            </constraints>
+                                            <segments>
+                                                <segment title="卡包卡牌"/>
+                                                <segment title="卡牌市场"/>
+                                                <segment title="我的卡牌"/>
+                                            </segments>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="sanguo/gb_seleted"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="sanguo/gb_def"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="segTextColor">
+                                                    <color key="value" red="1" green="0.76862745099999996" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                    <color key="value" red="1" green="0.76862745099999996" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTextColor">
+                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dividerWidth">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </segmentedControl>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="300" id="2hQ-Lz-ykH"/>
+                                        <constraint firstAttribute="trailing" secondItem="MY1-vw-CWt" secondAttribute="trailing" constant="30" id="Dl7-Vd-aR3"/>
+                                        <constraint firstItem="MY1-vw-CWt" firstAttribute="leading" secondItem="Ne4-GU-8jv" secondAttribute="leading" constant="30" id="PTb-ZA-8I5"/>
+                                        <constraint firstItem="MY1-vw-CWt" firstAttribute="top" secondItem="Ne4-GU-8jv" secondAttribute="top" constant="10" id="tdh-P4-eOZ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCO-fB-xZb">
+                                    <rect key="frame" x="40" y="395" width="295" height="300"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/packViewTabContentBg" translatesAutoresizingMaskIntoConstraints="NO" id="QfY-W2-wfb">
+                                            <rect key="frame" x="0.0" y="0.0" width="295" height="300"/>
+                                        </imageView>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AHT-Wr-DIP" customClass="SanguoSegmentedControl" customModule="cryptoios" customModuleProvider="target">
+                                            <rect key="frame" x="60" y="10" width="175" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="pla-rU-aUZ"/>
+                                            </constraints>
+                                            <segments>
+                                                <segment title="所有广播"/>
+                                                <segment title="我的广播"/>
+                                            </segments>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="sanguo/gb_seleted"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="sanguo/gb_def"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="segTextColor">
+                                                    <color key="value" red="1" green="0.76862745099999996" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                    <color key="value" red="1" green="0.76862745099999996" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTextColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dividerWidth">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </segmentedControl>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="300" id="GQe-yf-58O"/>
+                                        <constraint firstItem="QfY-W2-wfb" firstAttribute="top" secondItem="xCO-fB-xZb" secondAttribute="top" id="P4Y-pP-VLB"/>
+                                        <constraint firstItem="AHT-Wr-DIP" firstAttribute="leading" secondItem="xCO-fB-xZb" secondAttribute="leading" constant="60" id="dcP-TR-rz4"/>
+                                        <constraint firstItem="AHT-Wr-DIP" firstAttribute="top" secondItem="xCO-fB-xZb" secondAttribute="top" constant="10" id="jww-Sk-3j9"/>
+                                        <constraint firstAttribute="trailing" secondItem="AHT-Wr-DIP" secondAttribute="trailing" constant="60" id="ljX-XG-grz"/>
+                                        <constraint firstAttribute="bottom" secondItem="QfY-W2-wfb" secondAttribute="bottom" id="mUJ-LU-hVh"/>
+                                        <constraint firstItem="QfY-W2-wfb" firstAttribute="leading" secondItem="xCO-fB-xZb" secondAttribute="leading" id="wbt-ey-Hdu"/>
+                                        <constraint firstAttribute="trailing" secondItem="QfY-W2-wfb" secondAttribute="trailing" id="yrZ-e8-top"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSe-sS-rXg">
+                                    <rect key="frame" x="40" y="395" width="295" height="300"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/packViewTabContentBg" translatesAutoresizingMaskIntoConstraints="NO" id="vPu-tL-oUq">
+                                            <rect key="frame" x="0.0" y="0.0" width="295" height="300"/>
+                                        </imageView>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hzr-r9-ufK" customClass="SanguoSegmentedControl" customModule="cryptoios" customModuleProvider="target">
+                                            <rect key="frame" x="50" y="10" width="195" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="aYL-Wc-rE6"/>
+                                            </constraints>
+                                            <segments>
+                                                <segment title="幸运币市场"/>
+                                                <segment title="我的幸运币"/>
+                                            </segments>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="sanguo/gb_seleted"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="sanguo/gb_def"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="segTextColor">
+                                                    <color key="value" red="1" green="0.76862745099999996" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                    <color key="value" red="1" green="0.76862745099999996" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTextColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dividerWidth">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </segmentedControl>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Hzr-r9-ufK" firstAttribute="top" secondItem="rSe-sS-rXg" secondAttribute="top" constant="10" id="3dZ-bv-bO0"/>
+                                        <constraint firstItem="vPu-tL-oUq" firstAttribute="leading" secondItem="rSe-sS-rXg" secondAttribute="leading" id="F8N-RO-S7C"/>
+                                        <constraint firstAttribute="trailing" secondItem="vPu-tL-oUq" secondAttribute="trailing" id="N2e-03-hRW"/>
+                                        <constraint firstItem="vPu-tL-oUq" firstAttribute="top" secondItem="rSe-sS-rXg" secondAttribute="top" id="SIZ-hh-bVj"/>
+                                        <constraint firstItem="Hzr-r9-ufK" firstAttribute="leading" secondItem="rSe-sS-rXg" secondAttribute="leading" constant="50" id="hsG-Vx-iO5"/>
+                                        <constraint firstAttribute="height" constant="300" id="kII-XK-Wwm"/>
+                                        <constraint firstAttribute="bottom" secondItem="vPu-tL-oUq" secondAttribute="bottom" id="snU-B8-ID6"/>
+                                        <constraint firstAttribute="trailing" secondItem="Hzr-r9-ufK" secondAttribute="trailing" constant="50" id="vcZ-MT-hmd"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="T6M-8S-ioa" firstAttribute="centerX" secondItem="y15-AV-gF5" secondAttribute="centerX" id="19p-13-2Vq"/>
+                                <constraint firstItem="OMI-IH-5Xx" firstAttribute="top" secondItem="y15-AV-gF5" secondAttribute="top" id="2pW-cV-Oad"/>
+                                <constraint firstAttribute="height" constant="900" id="6Yt-da-pM3"/>
+                                <constraint firstItem="OyJ-Rs-pAM" firstAttribute="leading" secondItem="ccq-Wx-GrA" secondAttribute="leading" id="995-PU-E9E"/>
+                                <constraint firstAttribute="trailing" secondItem="OMI-IH-5Xx" secondAttribute="trailing" id="FDH-0r-gH4"/>
+                                <constraint firstAttribute="trailing" secondItem="ccq-Wx-GrA" secondAttribute="trailing" constant="20" id="Fkr-47-QrU"/>
+                                <constraint firstItem="xCO-fB-xZb" firstAttribute="leading" secondItem="y15-AV-gF5" secondAttribute="leading" constant="40" id="J8D-2L-1rL"/>
+                                <constraint firstItem="mga-JA-Jg0" firstAttribute="centerX" secondItem="T6M-8S-ioa" secondAttribute="centerX" id="JhW-h1-2nC"/>
+                                <constraint firstItem="Ne4-GU-8jv" firstAttribute="top" secondItem="LDu-jk-HSR" secondAttribute="bottom" constant="20" id="YYI-1f-auT"/>
+                                <constraint firstItem="OyJ-Rs-pAM" firstAttribute="top" secondItem="ccq-Wx-GrA" secondAttribute="bottom" constant="8" symbolic="YES" id="aDq-mT-W2y"/>
+                                <constraint firstItem="LDu-jk-HSR" firstAttribute="centerX" secondItem="y15-AV-gF5" secondAttribute="centerX" id="apG-Vx-Mox"/>
+                                <constraint firstItem="ccq-Wx-GrA" firstAttribute="top" secondItem="y15-AV-gF5" secondAttribute="top" constant="10" id="ape-RL-yYx"/>
+                                <constraint firstAttribute="trailing" secondItem="rSe-sS-rXg" secondAttribute="trailing" constant="40" id="c17-fB-Dfu"/>
+                                <constraint firstItem="mga-JA-Jg0" firstAttribute="top" secondItem="T6M-8S-ioa" secondAttribute="top" id="fmY-d9-ku8"/>
+                                <constraint firstAttribute="trailing" secondItem="Ne4-GU-8jv" secondAttribute="trailing" constant="40" id="gGa-BQ-Hkt"/>
+                                <constraint firstItem="LDu-jk-HSR" firstAttribute="top" secondItem="OyJ-Rs-pAM" secondAttribute="bottom" constant="8" id="gKM-B8-ZLN"/>
+                                <constraint firstItem="ccq-Wx-GrA" firstAttribute="leading" secondItem="y15-AV-gF5" secondAttribute="leading" constant="20" id="isL-4c-0P0"/>
+                                <constraint firstItem="OyJ-Rs-pAM" firstAttribute="trailing" secondItem="ccq-Wx-GrA" secondAttribute="trailing" id="nQS-OF-Lep"/>
+                                <constraint firstItem="OMI-IH-5Xx" firstAttribute="leading" secondItem="y15-AV-gF5" secondAttribute="leading" id="oag-t8-IVq"/>
+                                <constraint firstItem="T6M-8S-ioa" firstAttribute="centerY" secondItem="ccq-Wx-GrA" secondAttribute="centerY" constant="60" id="ph7-SW-Qcu"/>
+                                <constraint firstItem="rSe-sS-rXg" firstAttribute="top" secondItem="LDu-jk-HSR" secondAttribute="bottom" constant="20" id="qda-gs-woB"/>
+                                <constraint firstAttribute="trailing" secondItem="xCO-fB-xZb" secondAttribute="trailing" constant="40" id="t4n-Xw-xpn"/>
+                                <constraint firstItem="rSe-sS-rXg" firstAttribute="leading" secondItem="y15-AV-gF5" secondAttribute="leading" constant="40" id="th6-r9-Vt0"/>
+                                <constraint firstItem="LDu-jk-HSR" firstAttribute="width" secondItem="OyJ-Rs-pAM" secondAttribute="width" id="tlI-9V-zd1"/>
+                                <constraint firstItem="xCO-fB-xZb" firstAttribute="top" secondItem="LDu-jk-HSR" secondAttribute="bottom" constant="20" id="u8h-L2-z0w"/>
+                                <constraint firstItem="Ne4-GU-8jv" firstAttribute="leading" secondItem="y15-AV-gF5" secondAttribute="leading" constant="40" id="yAc-e5-uii"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="y15-AV-gF5" firstAttribute="leading" secondItem="2Ga-a0-GZN" secondAttribute="leading" id="0Id-WN-pA6"/>
+                        <constraint firstAttribute="bottom" secondItem="y15-AV-gF5" secondAttribute="bottom" id="c0O-Ej-b4i"/>
+                        <constraint firstItem="y15-AV-gF5" firstAttribute="top" secondItem="2Ga-a0-GZN" secondAttribute="top" id="fnc-UE-csG"/>
+                        <constraint firstAttribute="trailing" secondItem="y15-AV-gF5" secondAttribute="trailing" id="kW9-77-VOn"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="y15-AV-gF5" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Iqj-JZ-MVq"/>
+                <constraint firstItem="2Ga-a0-GZN" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="NAm-67-1yw"/>
+                <constraint firstItem="2Ga-a0-GZN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="No0-jO-FEi"/>
+                <constraint firstItem="2Ga-a0-GZN" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="QEm-XX-Z9h"/>
+                <constraint firstItem="2Ga-a0-GZN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dXg-8I-iMF"/>
+                <constraint firstItem="2Ga-a0-GZN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" id="fQw-Je-G6a"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="130.40000000000001" y="360.71964017991007"/>
         </view>
     </objects>
+    <resources>
+        <image name="sanguo/button_chouka" width="605" height="215"/>
+        <image name="sanguo/button_def" width="367" height="97"/>
+        <image name="sanguo/button_seleted" width="367" height="97"/>
+        <image name="sanguo/gb_def" width="191" height="77"/>
+        <image name="sanguo/gb_seleted" width="191" height="77"/>
+        <image name="sanguo/packBg" width="1147" height="746"/>
+        <image name="sanguo/packViewBg" width="1920" height="1239"/>
+        <image name="sanguo/packViewTabContentBg" width="1091" height="1228"/>
+    </resources>
 </document>
