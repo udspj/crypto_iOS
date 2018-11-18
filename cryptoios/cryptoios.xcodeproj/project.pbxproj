@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4346B24021A18ACE006A2CFD /* SanguoWikiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4346B23E21A18ACE006A2CFD /* SanguoWikiCollectionViewCell.swift */; };
+		4346B24121A18ACE006A2CFD /* SanguoWikiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4346B23F21A18ACE006A2CFD /* SanguoWikiCollectionViewCell.xib */; };
+		4346B24521A19911006A2CFD /* HeroAttCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4346B24321A19911006A2CFD /* HeroAttCollectionViewCell.swift */; };
+		4346B24621A19911006A2CFD /* HeroAttCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4346B24421A19911006A2CFD /* HeroAttCollectionViewCell.xib */; };
 		43ADBC422193342900214B55 /* IdolLinkMainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADBC402193342900214B55 /* IdolLinkMainHeader.swift */; };
 		43ADBC432193342900214B55 /* IdolLinkMainHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43ADBC412193342900214B55 /* IdolLinkMainHeader.xib */; };
 		43ADBC472193408200214B55 /* IdolDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADBC452193408200214B55 /* IdolDetailTableViewCell.swift */; };
@@ -78,6 +82,10 @@
 
 /* Begin PBXFileReference section */
 		3FE4CB8FCB0AA52C230FD388 /* Pods_cryptoios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cryptoios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4346B23E21A18ACE006A2CFD /* SanguoWikiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoWikiCollectionViewCell.swift; sourceTree = "<group>"; };
+		4346B23F21A18ACE006A2CFD /* SanguoWikiCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanguoWikiCollectionViewCell.xib; sourceTree = "<group>"; };
+		4346B24321A19911006A2CFD /* HeroAttCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroAttCollectionViewCell.swift; sourceTree = "<group>"; };
+		4346B24421A19911006A2CFD /* HeroAttCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroAttCollectionViewCell.xib; sourceTree = "<group>"; };
 		43ADBC402193342900214B55 /* IdolLinkMainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolLinkMainHeader.swift; sourceTree = "<group>"; };
 		43ADBC412193342900214B55 /* IdolLinkMainHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdolLinkMainHeader.xib; sourceTree = "<group>"; };
 		43ADBC452193408200214B55 /* IdolDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -168,6 +176,28 @@
 				3FE4CB8FCB0AA52C230FD388 /* Pods_cryptoios.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4346B23D21A18AA2006A2CFD /* Wiki */ = {
+			isa = PBXGroup;
+			children = (
+				43E7FFDE21848F8800FA2F3D /* SanguoWikiViewController.swift */,
+				43E7FFDF21848F8800FA2F3D /* SanguoWikiViewController.xib */,
+				4346B23E21A18ACE006A2CFD /* SanguoWikiCollectionViewCell.swift */,
+				4346B23F21A18ACE006A2CFD /* SanguoWikiCollectionViewCell.xib */,
+			);
+			path = Wiki;
+			sourceTree = "<group>";
+		};
+		4346B24221A198EF006A2CFD /* HeroDetail */ = {
+			isa = PBXGroup;
+			children = (
+				43E7FFE621848FBE00FA2F3D /* SanguoHeroDetailViewController.swift */,
+				43E7FFE721848FBE00FA2F3D /* SanguoHeroDetailViewController.xib */,
+				4346B24321A19911006A2CFD /* HeroAttCollectionViewCell.swift */,
+				4346B24421A19911006A2CFD /* HeroAttCollectionViewCell.xib */,
+			);
+			path = HeroDetail;
 			sourceTree = "<group>";
 		};
 		43ADBC442193405400214B55 /* IdolDetail */ = {
@@ -275,12 +305,10 @@
 				43E7FFBC2184896700FA2F3D /* SanguoMainViewController.xib */,
 				43E7FFDA21848F6D00FA2F3D /* SanguoStoreViewController.swift */,
 				43E7FFDB21848F6D00FA2F3D /* SanguoStoreViewController.xib */,
-				43E7FFDE21848F8800FA2F3D /* SanguoWikiViewController.swift */,
-				43E7FFDF21848F8800FA2F3D /* SanguoWikiViewController.xib */,
+				4346B23D21A18AA2006A2CFD /* Wiki */,
 				43E7FFE221848FA200FA2F3D /* SanguoTransViewController.swift */,
 				43E7FFE321848FA200FA2F3D /* SanguoTransViewController.xib */,
-				43E7FFE621848FBE00FA2F3D /* SanguoHeroDetailViewController.swift */,
-				43E7FFE721848FBE00FA2F3D /* SanguoHeroDetailViewController.xib */,
+				4346B24221A198EF006A2CFD /* HeroDetail */,
 				43E7FFEA2184914900FA2F3D /* SanguoDrawCardViewController.swift */,
 				43E7FFEB2184914900FA2F3D /* SanguoDrawCardViewController.xib */,
 				43FCA47C2199DEAE0021B416 /* SanguoSegmentedControl.swift */,
@@ -441,6 +469,7 @@
 				43E7FFD921848D1C00FA2F3D /* AssetsViewController.xib in Resources */,
 				43ADBC4D2194652E00214B55 /* Moe.xcassets in Resources */,
 				43E7FFE121848F8800FA2F3D /* SanguoWikiViewController.xib in Resources */,
+				4346B24121A18ACE006A2CFD /* SanguoWikiCollectionViewCell.xib in Resources */,
 				43E7FFF52184921A00FA2F3D /* IdolDrawCardViewController.xib in Resources */,
 				43E7FFD021848B0A00FA2F3D /* MeMainViewController.xib in Resources */,
 				43ADBC592195E13700214B55 /* TujianCell.xib in Resources */,
@@ -453,6 +482,7 @@
 				43E7FFE921848FBE00FA2F3D /* SanguoHeroDetailViewController.xib in Resources */,
 				43ADBC5B2198254400214B55 /* Sanguo.xcassets in Resources */,
 				43E7FFD421848D0400FA2F3D /* TransactionViewController.xib in Resources */,
+				4346B24621A19911006A2CFD /* HeroAttCollectionViewCell.xib in Resources */,
 				43ADBC542195D72200214B55 /* Shuihu.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +516,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-cryptoios/Pods-cryptoios-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
@@ -495,6 +526,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
@@ -518,6 +550,7 @@
 				43ADBC472193408200214B55 /* IdolDetailTableViewCell.swift in Sources */,
 				43ADBC5121949C9C00214B55 /* MoeCardCell.swift in Sources */,
 				43E7FFD821848D1C00FA2F3D /* AssetsViewController.swift in Sources */,
+				4346B24521A19911006A2CFD /* HeroAttCollectionViewCell.swift in Sources */,
 				43ADBC422193342900214B55 /* IdolLinkMainHeader.swift in Sources */,
 				43E7FFDC21848F6D00FA2F3D /* SanguoStoreViewController.swift in Sources */,
 				43E7FFF42184921A00FA2F3D /* IdolDrawCardViewController.swift in Sources */,
@@ -538,6 +571,7 @@
 				43E7FFEC2184914900FA2F3D /* SanguoDrawCardViewController.swift in Sources */,
 				43E700102184964E00FA2F3D /* ShuihuShareViewController.swift in Sources */,
 				43E7FFE821848FBE00FA2F3D /* SanguoHeroDetailViewController.swift in Sources */,
+				4346B24021A18ACE006A2CFD /* SanguoWikiCollectionViewCell.swift in Sources */,
 				43E7FFF82184922D00FA2F3D /* IdolRankViewController.swift in Sources */,
 				43E7FF9C2184534D00FA2F3D /* AppDelegate.swift in Sources */,
 				43E7FFC121848A7400FA2F3D /* ShuihuMainViewController.swift in Sources */,

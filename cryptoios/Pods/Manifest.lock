@@ -1,6 +1,9 @@
 PODS:
   - BigInt (3.1.0):
     - SipHash (~> 1.2)
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
   - CryptoSwift (0.13.0)
   - PromiseKit (6.5.2):
     - PromiseKit/CorePromise (= 6.5.2)
@@ -20,12 +23,14 @@ PODS:
     - secp256k1.swift
 
 DEPENDENCIES:
+  - Charts
   - PromiseKit (= 6.5.2)
   - web3swift (from `https://github.com/bankex/web3swift.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BigInt
+    - Charts
     - CryptoSwift
     - PromiseKit
     - secp256k1.swift
@@ -42,12 +47,13 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
   CryptoSwift: 16e78bebf567bad1c87b2d58f6547f25b74c31aa
   PromiseKit: 27c1601bfb73405871b805bcb8cf7e55c4dad3db
   secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
   web3swift: 6b554da5ec34fe3569dab78a7a2ad3b8ce4a7b61
 
-PODFILE CHECKSUM: 5b62124bcaf69cfbdf7c795d95ab51a47e91c538
+PODFILE CHECKSUM: d97ed046b98db8616bb54d9f364b49d2c8dcda4d
 
 COCOAPODS: 1.5.3

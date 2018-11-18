@@ -6,6 +6,7 @@ target 'cryptoios' do
   use_frameworks!
 
   # Pods for cryptoios
+  pod 'Charts'
   pod "PromiseKit", "6.5.2"
   pod 'web3swift', :git => 'https://github.com/bankex/web3swift.git'
 end
