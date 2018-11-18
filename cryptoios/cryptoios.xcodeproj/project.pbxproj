@@ -73,9 +73,11 @@
 		43E7FFFC2184923D00FA2F3D /* IdolShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFFA2184923D00FA2F3D /* IdolShareViewController.swift */; };
 		43E7FFFD2184923D00FA2F3D /* IdolShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFFB2184923D00FA2F3D /* IdolShareViewController.xib */; };
 		43FCA47D2199DEAE0021B416 /* SanguoSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCA47C2199DEAE0021B416 /* SanguoSegmentedControl.swift */; };
+		D527C6A44367E720F8326B2C /* Pods_cryptoios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE4CB8FCB0AA52C230FD388 /* Pods_cryptoios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FE4CB8FCB0AA52C230FD388 /* Pods_cryptoios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cryptoios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43ADBC402193342900214B55 /* IdolLinkMainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolLinkMainHeader.swift; sourceTree = "<group>"; };
 		43ADBC412193342900214B55 /* IdolLinkMainHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdolLinkMainHeader.xib; sourceTree = "<group>"; };
 		43ADBC452193408200214B55 /* IdolDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -144,6 +146,8 @@
 		43E7FFFE2184924E00FA2F3D /* IdolDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolDetailViewController.swift; sourceTree = "<group>"; };
 		43E7FFFF2184924E00FA2F3D /* IdolDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdolDetailViewController.xib; sourceTree = "<group>"; };
 		43FCA47C2199DEAE0021B416 /* SanguoSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoSegmentedControl.swift; sourceTree = "<group>"; };
+		AAA59CE92C74F509FF0CADFE /* Pods-cryptoios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoios.release.xcconfig"; path = "Pods/Target Support Files/Pods-cryptoios/Pods-cryptoios.release.xcconfig"; sourceTree = "<group>"; };
+		D3B871BB9BC0EC91B8AE78CE /* Pods-cryptoios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cryptoios/Pods-cryptoios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,12 +155,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D527C6A44367E720F8326B2C /* Pods_cryptoios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		346B76B817D4C317A3AF2F42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FE4CB8FCB0AA52C230FD388 /* Pods_cryptoios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		43ADBC442193405400214B55 /* IdolDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +217,8 @@
 			children = (
 				43E7FF9A2184534D00FA2F3D /* cryptoios */,
 				43E7FF992184534D00FA2F3D /* Products */,
+				49BEB14F75EB8D4BC50151C2 /* Pods */,
+				346B76B817D4C317A3AF2F42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -335,6 +350,15 @@
 			path = Me;
 			sourceTree = "<group>";
 		};
+		49BEB14F75EB8D4BC50151C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3B871BB9BC0EC91B8AE78CE /* Pods-cryptoios.debug.xcconfig */,
+				AAA59CE92C74F509FF0CADFE /* Pods-cryptoios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -342,9 +366,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43E7FFAA2184534F00FA2F3D /* Build configuration list for PBXNativeTarget "cryptoios" */;
 			buildPhases = (
+				00268921274C3C3F76585038 /* [CP] Check Pods Manifest.lock */,
 				43E7FF942184534D00FA2F3D /* Sources */,
 				43E7FF952184534D00FA2F3D /* Frameworks */,
 				43E7FF962184534D00FA2F3D /* Resources */,
+				6D303B243C22390042F98426 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -432,6 +458,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00268921274C3C3F76585038 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cryptoios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D303B243C22390042F98426 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cryptoios/Pods-cryptoios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cryptoios/Pods-cryptoios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43E7FF942184534D00FA2F3D /* Sources */ = {
@@ -604,6 +679,7 @@
 		};
 		43E7FFAB2184534F00FA2F3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B871BB9BC0EC91B8AE78CE /* Pods-cryptoios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -621,6 +697,7 @@
 		};
 		43E7FFAC2184534F00FA2F3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA59CE92C74F509FF0CADFE /* Pods-cryptoios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
