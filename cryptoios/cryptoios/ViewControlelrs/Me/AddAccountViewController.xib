@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="memoText" destination="hWO-lE-zak" id="9fj-7o-Efw"/>
                 <outlet property="pwText" destination="Vh1-Re-2tC" id="idw-XN-th5"/>
+                <outlet property="view" destination="iN0-l3-epB" id="FNV-c6-Uos"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
