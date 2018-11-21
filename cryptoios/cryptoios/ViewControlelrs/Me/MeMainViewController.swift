@@ -15,7 +15,7 @@ class MeMainViewController: UIViewController {
     var userDir : String?
     var keystoreManager : KeystoreManager?
     var bip32keystoreManager : KeystoreManager?
-    var bigint:BigUInt = 100000000000000000
+    var bigint:Double = 100000000000000000
     var usermanager:UserManager = UserManager()
     
     var web3Main : Web3?
@@ -47,7 +47,7 @@ class MeMainViewController: UIViewController {
         let address: Address = "0xaada27b678B00aD0acDc1e7bB391f5c0a8590724"
         let web3Main = Web3(infura: .mainnet)
         let balance: BigUInt = try! web3Main.eth.getBalance(address: address)
-        print(balance)
+        print(Double(balance.words[0])/bigint)
         
 //        userDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
 //
