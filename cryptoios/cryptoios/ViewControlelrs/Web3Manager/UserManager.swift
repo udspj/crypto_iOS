@@ -80,10 +80,15 @@ class UserManager: NSObject {
     
     internal func setUserAddressBy(mnemonics: String, password: String) -> Void {
         var bip32ks: BIP32Keystore?
-        let mnemonics = try! Mnemonics(mnemonics)
-        bip32ks = try! BIP32Keystore(mnemonics: mnemonics, password: password)
-        let keydata = try! JSONEncoder().encode(bip32ks!.keystoreParams)
-        FileManager.default.createFile(atPath: userDir + "/bip32_keystore"+"/key.json", contents: keydata, attributes: nil)
+        do {
+            let mnemonics = try Mnemonics(mnemonics)
+            bip32ks = try! BIP32Keystore(mnemonics: mnemonics, password: password)
+            let keydata = try! JSONEncoder().encode(bip32ks!.keystoreParams)
+            FileManager.default.createFile(atPath: userDir + "/bip32_keystore"+"/key.json", contents: keydata, attributes: nil)
+            print("keydata")
+        } catch {
+            print("UserNotFound")
+        }
     }
     
     // MARK: result check functions

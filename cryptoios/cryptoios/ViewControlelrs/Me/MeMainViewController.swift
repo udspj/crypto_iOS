@@ -12,6 +12,10 @@ import web3swift
 import Foundation
 
 class MeMainViewController: UIViewController {
+    
+    @IBOutlet var addrLabel: UILabel!
+    @IBOutlet var balLabel: UILabel!
+    
     var userDir : String?
     var keystoreManager : KeystoreManager?
     var bip32keystoreManager : KeystoreManager?
@@ -23,40 +27,13 @@ class MeMainViewController: UIViewController {
         super.viewDidLoad()
         
         let addr = usermanager.getUserAddress()
-        print(addr)
-        print(addr?.isValid)
-        print(type(of: addr!.address))
-        
-        let userDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-        let keystoreManager = KeystoreManager.managerForPath(userDir + "/keystore")
-        
-        //create BIP32 keystore
-        let bip32keystoreManager = KeystoreManager.managerForPath(userDir + "/bip32_keystore", scanForHDwallets: true)
-        var bip32ks: BIP32Keystore?
-        if (bip32keystoreManager?.addresses.count == 0) {
-            let mnemonics = try! Mnemonics("region accuse kidney buddy habit soccer budget boat end poem record tag")
-            bip32ks = try! BIP32Keystore(mnemonics: mnemonics, password: "11111111")
-            let keydata = try! JSONEncoder().encode(bip32ks!.keystoreParams)
-            FileManager.default.createFile(atPath: userDir + "/bip32_keystore"+"/key.json", contents: keydata, attributes: nil)
-        } else {
-            bip32ks = bip32keystoreManager?.walletForAddress((bip32keystoreManager?.addresses[0])!) as? BIP32Keystore
-        }
-        guard let bip32sender = bip32ks?.addresses.first else {return}
-        print(bip32sender)
-        
-        let address: Address = "0xaada27b678B00aD0acDc1e7bB391f5c0a8590724"
+        addrLabel.text = addr!.address
         let web3Main = Web3(infura: .mainnet)
-        let balance: BigUInt = try! web3Main.eth.getBalance(address: address)
+        let balance: BigUInt = try! web3Main.eth.getBalance(address: addr!)
         print(Double(balance.words[0])/bigint)
+        balLabel.text = "余额："+String(Double(balance.words[0])/bigint)+" eth"
         
-//        userDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-//
-//        let queue = OperationQueue()
-//        queue.addOperation {
-//            self.createNormalKeystore()
-//            try? self.createBIP32Keystore()
-//            try? self.SetupMainAccount()
-//        }
+        
     }
     
     func createNormalKeystore()  {
