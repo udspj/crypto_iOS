@@ -12,6 +12,7 @@ class ShuihuMainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.layer.masksToBounds = true
     }
     
     

@@ -14,8 +14,7 @@ class SanguoMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "以太三国"
-        let scrollView = self.view as! UIScrollView
-        scrollView.contentSize = contentView.bounds.size
+        
     }
     
     
