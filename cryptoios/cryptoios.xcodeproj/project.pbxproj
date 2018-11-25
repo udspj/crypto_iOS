@@ -77,6 +77,9 @@
 		43E7FFFC2184923D00FA2F3D /* IdolShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFFA2184923D00FA2F3D /* IdolShareViewController.swift */; };
 		43E7FFFD2184923D00FA2F3D /* IdolShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFFB2184923D00FA2F3D /* IdolShareViewController.xib */; };
 		43FCA47D2199DEAE0021B416 /* SanguoSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCA47C2199DEAE0021B416 /* SanguoSegmentedControl.swift */; };
+		71EBF74A21A43B3C0026B621 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EBF74921A43B3C0026B621 /* UserManager.swift */; };
+		71EBF74C21A5450B0026B621 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EBF74B21A5450B0026B621 /* AddAccountViewController.swift */; };
+		71EBF74E21A5451B0026B621 /* AddAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71EBF74D21A5451B0026B621 /* AddAccountViewController.xib */; };
 		D527C6A44367E720F8326B2C /* Pods_cryptoios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE4CB8FCB0AA52C230FD388 /* Pods_cryptoios.framework */; };
 /* End PBXBuildFile section */
 
@@ -154,6 +157,9 @@
 		43E7FFFE2184924E00FA2F3D /* IdolDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolDetailViewController.swift; sourceTree = "<group>"; };
 		43E7FFFF2184924E00FA2F3D /* IdolDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdolDetailViewController.xib; sourceTree = "<group>"; };
 		43FCA47C2199DEAE0021B416 /* SanguoSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoSegmentedControl.swift; sourceTree = "<group>"; };
+		71EBF74921A43B3C0026B621 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		71EBF74B21A5450B0026B621 /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
+		71EBF74D21A5451B0026B621 /* AddAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAccountViewController.xib; sourceTree = "<group>"; };
 		AAA59CE92C74F509FF0CADFE /* Pods-cryptoios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoios.release.xcconfig"; path = "Pods/Target Support Files/Pods-cryptoios/Pods-cryptoios.release.xcconfig"; sourceTree = "<group>"; };
 		D3B871BB9BC0EC91B8AE78CE /* Pods-cryptoios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cryptoios/Pods-cryptoios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -279,6 +285,7 @@
 		43E7FFAD2184848600FA2F3D /* ViewControlelrs */ = {
 			isa = PBXGroup;
 			children = (
+				71EBF74721A425CF0026B621 /* Web3Manager */,
 				43E7FFCC21848AFB00FA2F3D /* Me */,
 				43E7FFC721848A8500FA2F3D /* IdolLink */,
 				43E7FFBA2184877D00FA2F3D /* Moe */,
@@ -374,6 +381,8 @@
 				43E7FFD221848D0400FA2F3D /* TransactionViewController.xib */,
 				43E7FFD621848D1C00FA2F3D /* AssetsViewController.swift */,
 				43E7FFD721848D1C00FA2F3D /* AssetsViewController.xib */,
+				71EBF74B21A5450B0026B621 /* AddAccountViewController.swift */,
+				71EBF74D21A5451B0026B621 /* AddAccountViewController.xib */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -385,6 +394,14 @@
 				AAA59CE92C74F509FF0CADFE /* Pods-cryptoios.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		71EBF74721A425CF0026B621 /* Web3Manager */ = {
+			isa = PBXGroup;
+			children = (
+				71EBF74921A43B3C0026B621 /* UserManager.swift */,
+			);
+			path = Web3Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +474,7 @@
 				43E700052184961F00FA2F3D /* ShuihuRankViewController.xib in Resources */,
 				43E700112184964E00FA2F3D /* ShuihuShareViewController.xib in Resources */,
 				43E7FFC621848A8100FA2F3D /* MoeMainViewController.xib in Resources */,
+				71EBF74E21A5451B0026B621 /* AddAccountViewController.xib in Resources */,
 				43ADBC432193342900214B55 /* IdolLinkMainHeader.xib in Resources */,
 				43E7FFC221848A7400FA2F3D /* ShuihuMainViewController.xib in Resources */,
 				43E7FFCB21848AAF00FA2F3D /* IdolLinkMainViewController.xib in Resources */,
@@ -561,11 +579,13 @@
 				43E700002184924E00FA2F3D /* IdolDetailViewController.swift in Sources */,
 				43E700182184973100FA2F3D /* ShuihuCardDetailViewController.swift in Sources */,
 				43E7001E2188A50E00FA2F3D /* IdolLinkCell.swift in Sources */,
+				71EBF74A21A43B3C0026B621 /* UserManager.swift in Sources */,
 				43FCA47D2199DEAE0021B416 /* SanguoSegmentedControl.swift in Sources */,
 				43E7FFCF21848B0A00FA2F3D /* MeMainViewController.swift in Sources */,
 				43E7FFE421848FA200FA2F3D /* SanguoTransViewController.swift in Sources */,
 				43E7FFFC2184923D00FA2F3D /* IdolShareViewController.swift in Sources */,
 				43E7FFBD2184896700FA2F3D /* SanguoMainViewController.swift in Sources */,
+				71EBF74C21A5450B0026B621 /* AddAccountViewController.swift in Sources */,
 				43E7FFE021848F8800FA2F3D /* SanguoWikiViewController.swift in Sources */,
 				43E700082184962E00FA2F3D /* ShuihuWikiViewController.swift in Sources */,
 				43E7FFEC2184914900FA2F3D /* SanguoDrawCardViewController.swift in Sources */,
@@ -717,6 +737,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCMN779ML8;
 				INFOPLIST_FILE = cryptoios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -735,6 +756,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCMN779ML8;
 				INFOPLIST_FILE = cryptoios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
