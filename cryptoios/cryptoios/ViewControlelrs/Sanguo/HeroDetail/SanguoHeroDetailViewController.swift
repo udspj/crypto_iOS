@@ -138,7 +138,13 @@ class SanguoHeroDetailViewController: UIViewController,UICollectionViewDataSourc
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! HeroAttCollectionViewCell;
         let key = AttKeys[indexPath.item]
         cell.nameLabel.text = key
-        cell.valueLabel.text = hero?[key] as? String
+        if let v = hero?[key] as? String{
+            cell.valueLabel.text = v
+
+        } else if let v = hero?[key] as? Int {
+            cell.valueLabel.text = String(v)
+        }
+        
         return cell
     }
 }

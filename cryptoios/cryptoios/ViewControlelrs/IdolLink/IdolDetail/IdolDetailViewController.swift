@@ -48,14 +48,14 @@ class IdolDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         
         
         
-        let header = UIImageView(image: UIImage(named: detailImgName))
+        let header = UIImageView(image: UIImage(named: "girdcards/\(detailImgName)"))
         let displayWidth = self.view.bounds.width;
         let height = displayWidth / header.image!.size.width * header.image!.size.height;
         header.frame = CGRect(x:0.0,y:0.0, width: self.view.bounds.width, height:height);
         header.contentMode = UIView.ContentMode.scaleAspectFit;
         tableview.tableHeaderView = header
         
-        let footer = UIImageView(image: UIImage(named: imgName))
+        let footer = UIImageView(image: UIImage(named: "girdcards/\(imgName)"))
         footer.contentMode = UIView.ContentMode.scaleAspectFit;
         footer.frame = CGRect(x:0.0,y:0.0, width: self.view.bounds.width, height:400.0);
         tableview.tableFooterView = footer

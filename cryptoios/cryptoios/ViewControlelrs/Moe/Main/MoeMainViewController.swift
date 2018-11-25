@@ -27,6 +27,7 @@ class MoeMainViewController: UIViewController,UICollectionViewDelegate, UICollec
     }
 
     @IBAction func tapCard(_ sender: Any) {
+        
         let vc = MoeCardDetailViewController();
         navigationController?.pushViewController(vc, animated: true);
     }
@@ -81,7 +82,7 @@ class MoeMainViewController: UIViewController,UICollectionViewDelegate, UICollec
         
         let vc = MoeCardDetailViewController();
         
-//        vc.cardObj = obj
+        vc.cardObj = obj
         navigationController?.pushViewController(vc, animated: true);
     }
 }
