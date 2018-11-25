@@ -57,8 +57,9 @@ class IdolLinkMainViewController: UIViewController, UICollectionViewDelegate, UI
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! IdolLinkCell
         let obj = self.cards[String(indexPath.item)] as! [String:Any]
         
-        let imgPath = obj["img"] as! String
-        let image = UIImage.init(named: (imgPath as NSString).lastPathComponent)
+        let img = (obj["img"] as! NSString).lastPathComponent
+        let imgPath = "girdcards/\(img)"
+        let image = UIImage.init(named: imgPath)
         cell.cardImageView.image = image;
         
         cell.titleLabel.text = obj["name"] as? String

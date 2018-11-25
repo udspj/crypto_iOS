@@ -60,6 +60,9 @@
                                     <color key="tintColor" red="0.7843137255" green="0.56862745100000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="立即抽卡(0)" backgroundImage="sanguo/button_chouka"/>
+                                    <connections>
+                                        <action selector="tapDrawCard:" destination="-1" eventType="touchUpInside" id="5lf-Yc-pN5"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帮助： 以太三国创新推出全新的区块链抽卡玩法。 通过抽卡方法获得武将卡，将会是唯一的官方卡牌发售渠道。 智能卡包中当前包含的卡牌和中奖概率完全公开透明。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyJ-Rs-pAM">
                                     <rect key="frame" x="20" y="260" width="335" height="72"/>
@@ -71,7 +74,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LDu-jk-HSR" customClass="SanguoSegmentedControl" customModule="cryptoios" customModuleProvider="target">
-                                    <rect key="frame" x="20" y="340" width="335" height="35"/>
+                                    <rect key="frame" x="20" y="340" width="335" height="36"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="35" id="tRL-FC-yQB"/>
                                     </constraints>
@@ -93,7 +96,7 @@
                                     <rect key="frame" x="40" y="395" width="295" height="300"/>
                                     <subviews>
                                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MY1-vw-CWt" customClass="SanguoSegmentedControl" customModule="cryptoios" customModuleProvider="target">
-                                            <rect key="frame" x="30" y="10" width="235" height="35"/>
+                                            <rect key="frame" x="30" y="10" width="235" height="36"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="XEa-gY-x3t"/>
                                             </constraints>
@@ -136,7 +139,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="295" height="300"/>
                                         </imageView>
                                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AHT-Wr-DIP" customClass="SanguoSegmentedControl" customModule="cryptoios" customModuleProvider="target">
-                                            <rect key="frame" x="60" y="10" width="175" height="35"/>
+                                            <rect key="frame" x="60" y="10" width="175" height="36"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="pla-rU-aUZ"/>
                                             </constraints>

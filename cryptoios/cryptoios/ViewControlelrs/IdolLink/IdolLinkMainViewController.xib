@@ -19,11 +19,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tde-Mf-AT3">
-                <size key="itemSize" width="261" height="468"/>
+            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="Tde-Mf-AT3">
+                <size key="itemSize" width="190" height="355"/>
                 <size key="headerReferenceSize" width="375" height="280"/>
                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
             </collectionViewFlowLayout>
             <connections>
                 <outlet property="dataSource" destination="-1" id="0a0-qM-uZo"/>

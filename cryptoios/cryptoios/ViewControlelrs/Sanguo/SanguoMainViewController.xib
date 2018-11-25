@@ -16,196 +16,433 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIScrollView">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1078"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAT-jo-aMb" userLabel="Content View">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="788"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUL-Bl-tBF">
+                    <rect key="frame" x="0.0" y="20" width="375" height="1058"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/homeBG" translatesAutoresizingMaskIntoConstraints="NO" id="Mbb-T4-ndn">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="252"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="252" id="oXH-P9-Os6"/>
-                            </constraints>
-                        </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/logo" translatesAutoresizingMaskIntoConstraints="NO" id="2Fq-O5-tNc">
-                            <rect key="frame" x="137.5" y="41" width="100" height="100"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="100" id="C87-cP-sgn"/>
-                                <constraint firstAttribute="height" constant="100" id="NED-gc-pzK"/>
-                            </constraints>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="以太三国" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXN-0P-8rx">
-                            <rect key="frame" x="97" y="141" width="181" height="54"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="181" id="uTC-iW-Tsc"/>
-                                <constraint firstAttribute="height" constant="54" id="vNh-wU-kwY"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQN-sI-fLD">
-                            <rect key="frame" x="130.5" y="195" width="114" height="41"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="41" id="shJ-lk-Lu2"/>
-                                <constraint firstAttribute="width" constant="114" id="uvi-dt-dBz"/>
-                            </constraints>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="预售商城" backgroundImage="sanguo/home_btn2"/>
-                            <connections>
-                                <action selector="tapStore:" destination="-1" eventType="touchUpInside" id="3c3-PN-4cb"/>
-                            </connections>
-                        </button>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KjH-8R-cS6">
-                            <rect key="frame" x="0.0" y="272" width="375" height="64"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAT-jo-aMb" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/heroes/1-1" translatesAutoresizingMaskIntoConstraints="NO" id="epZ-lH-7Bx">
-                                    <rect key="frame" x="0.0" y="0.0" width="75" height="64"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/homeBG" translatesAutoresizingMaskIntoConstraints="NO" id="Mbb-T4-ndn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="252"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="252" id="oXH-P9-Os6"/>
+                                    </constraints>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/heroes/3-1" translatesAutoresizingMaskIntoConstraints="NO" id="abv-Cu-gfg">
-                                    <rect key="frame" x="75" y="0.0" width="75" height="64"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/logo" translatesAutoresizingMaskIntoConstraints="NO" id="2Fq-O5-tNc">
+                                    <rect key="frame" x="137.5" y="41" width="100" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="C87-cP-sgn"/>
+                                        <constraint firstAttribute="height" constant="100" id="NED-gc-pzK"/>
+                                    </constraints>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/heroes/4-1" translatesAutoresizingMaskIntoConstraints="NO" id="BDD-4t-w5B">
-                                    <rect key="frame" x="150" y="0.0" width="75" height="64"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="以太三国" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXN-0P-8rx">
+                                    <rect key="frame" x="97" y="141" width="181" height="54"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="181" id="uTC-iW-Tsc"/>
+                                        <constraint firstAttribute="height" constant="54" id="vNh-wU-kwY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQN-sI-fLD">
+                                    <rect key="frame" x="130.5" y="195" width="114" height="41"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="41" id="shJ-lk-Lu2"/>
+                                        <constraint firstAttribute="width" constant="114" id="uvi-dt-dBz"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="预售商城" backgroundImage="sanguo/home_btn2"/>
+                                    <connections>
+                                        <action selector="tapStore:" destination="-1" eventType="touchUpInside" id="3c3-PN-4cb"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="独一无二的三国英雄卡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7T-n2-cu1">
+                                    <rect key="frame" x="10" y="262" width="355" height="41"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="41" id="vBE-Vr-dkA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KjH-8R-cS6">
+                                    <rect key="frame" x="0.0" y="474" width="375" height="64"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yzL-KO-v7w">
+                                            <rect key="frame" x="0.0" y="0.0" width="62.5" height="64"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/heroes/1-1" translatesAutoresizingMaskIntoConstraints="NO" id="JIX-5v-UkF">
+                                                    <rect key="frame" x="3" y="3" width="56.5" height="58"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/cardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="ugK-Kp-xp9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="62.5" height="64"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ugK-Kp-xp9" secondAttribute="trailing" id="Aq1-Wl-IJk"/>
+                                                <constraint firstItem="JIX-5v-UkF" firstAttribute="top" secondItem="yzL-KO-v7w" secondAttribute="top" constant="3" id="EEi-Mr-fP7"/>
+                                                <constraint firstItem="JIX-5v-UkF" firstAttribute="leading" secondItem="yzL-KO-v7w" secondAttribute="leading" constant="3" id="GXw-O7-eWg"/>
+                                                <constraint firstItem="ugK-Kp-xp9" firstAttribute="top" secondItem="yzL-KO-v7w" secondAttribute="top" id="HPy-7I-axa"/>
+                                                <constraint firstAttribute="bottom" secondItem="ugK-Kp-xp9" secondAttribute="bottom" id="JAX-3p-tKE"/>
+                                                <constraint firstItem="ugK-Kp-xp9" firstAttribute="leading" secondItem="yzL-KO-v7w" secondAttribute="leading" id="djK-Sw-LCA"/>
+                                                <constraint firstAttribute="trailing" secondItem="JIX-5v-UkF" secondAttribute="trailing" constant="3" id="jYa-Wn-guf"/>
+                                                <constraint firstAttribute="bottom" secondItem="JIX-5v-UkF" secondAttribute="bottom" constant="3" id="n77-Xn-e0a"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hG-UZ-Xbd">
+                                            <rect key="frame" x="62.5" y="0.0" width="62.5" height="64"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/heroes/2-1" translatesAutoresizingMaskIntoConstraints="NO" id="tns-Q9-WeG">
+                                                    <rect key="frame" x="3" y="3" width="56.5" height="58"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/cardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="AQ3-Cd-iCk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="62.5" height="64"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="AQ3-Cd-iCk" firstAttribute="leading" secondItem="8hG-UZ-Xbd" secondAttribute="leading" id="TMo-Gq-bQN"/>
+                                                <constraint firstItem="tns-Q9-WeG" firstAttribute="leading" secondItem="8hG-UZ-Xbd" secondAttribute="leading" constant="3" id="V5F-pT-nSi"/>
+                                                <constraint firstAttribute="trailing" secondItem="AQ3-Cd-iCk" secondAttribute="trailing" id="VeU-Zb-7LH"/>
+                                                <constraint firstItem="AQ3-Cd-iCk" firstAttribute="top" secondItem="8hG-UZ-Xbd" secondAttribute="top" id="cKs-hv-sne"/>
+                                                <constraint firstAttribute="bottom" secondItem="tns-Q9-WeG" secondAttribute="bottom" constant="3" id="e8A-fH-5eQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="tns-Q9-WeG" secondAttribute="trailing" constant="3" id="jPQ-YK-2Qp"/>
+                                                <constraint firstItem="tns-Q9-WeG" firstAttribute="top" secondItem="8hG-UZ-Xbd" secondAttribute="top" constant="3" id="ttI-C1-LZ9"/>
+                                                <constraint firstAttribute="bottom" secondItem="AQ3-Cd-iCk" secondAttribute="bottom" id="v2v-VA-87j"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ihb-Iz-tJl">
+                                            <rect key="frame" x="125" y="0.0" width="62.5" height="64"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/heroes/3-1" translatesAutoresizingMaskIntoConstraints="NO" id="78A-eO-NYu">
+                                                    <rect key="frame" x="3" y="3" width="56.5" height="58"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/cardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="rIB-RN-Mtk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="62.5" height="64"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="rIB-RN-Mtk" secondAttribute="trailing" id="DMo-No-MzJ"/>
+                                                <constraint firstItem="78A-eO-NYu" firstAttribute="top" secondItem="Ihb-Iz-tJl" secondAttribute="top" constant="3" id="NY3-pP-4Qx"/>
+                                                <constraint firstAttribute="bottom" secondItem="rIB-RN-Mtk" secondAttribute="bottom" id="Y9o-Sx-YYg"/>
+                                                <constraint firstItem="rIB-RN-Mtk" firstAttribute="leading" secondItem="Ihb-Iz-tJl" secondAttribute="leading" id="bsS-4q-JsE"/>
+                                                <constraint firstAttribute="trailing" secondItem="78A-eO-NYu" secondAttribute="trailing" constant="3" id="pyZ-eo-NUc"/>
+                                                <constraint firstItem="rIB-RN-Mtk" firstAttribute="top" secondItem="Ihb-Iz-tJl" secondAttribute="top" id="tFt-QG-fSV"/>
+                                                <constraint firstItem="78A-eO-NYu" firstAttribute="leading" secondItem="Ihb-Iz-tJl" secondAttribute="leading" constant="3" id="yBl-TB-J1P"/>
+                                                <constraint firstAttribute="bottom" secondItem="78A-eO-NYu" secondAttribute="bottom" constant="3" id="yse-Hz-8ak"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CoC-64-83V">
+                                            <rect key="frame" x="187.5" y="0.0" width="62.5" height="64"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/heroes/4-1" translatesAutoresizingMaskIntoConstraints="NO" id="Hd9-GH-b9H">
+                                                    <rect key="frame" x="3" y="3" width="56.5" height="58"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/cardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="ehr-cp-n2A">
+                                                    <rect key="frame" x="0.0" y="0.0" width="62.5" height="64"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="ehr-cp-n2A" firstAttribute="top" secondItem="CoC-64-83V" secondAttribute="top" id="0iV-0S-PNb"/>
+                                                <constraint firstAttribute="trailing" secondItem="Hd9-GH-b9H" secondAttribute="trailing" constant="3" id="ErP-vD-DoY"/>
+                                                <constraint firstAttribute="bottom" secondItem="Hd9-GH-b9H" secondAttribute="bottom" constant="3" id="LYf-Le-bDv"/>
+                                                <constraint firstItem="ehr-cp-n2A" firstAttribute="leading" secondItem="CoC-64-83V" secondAttribute="leading" id="TdP-Me-ish"/>
+                                                <constraint firstAttribute="bottom" secondItem="ehr-cp-n2A" secondAttribute="bottom" id="W3H-cb-yOU"/>
+                                                <constraint firstAttribute="trailing" secondItem="ehr-cp-n2A" secondAttribute="trailing" id="ckh-Pp-s2z"/>
+                                                <constraint firstItem="Hd9-GH-b9H" firstAttribute="leading" secondItem="CoC-64-83V" secondAttribute="leading" constant="3" id="ewq-BZ-Lk7"/>
+                                                <constraint firstItem="Hd9-GH-b9H" firstAttribute="top" secondItem="CoC-64-83V" secondAttribute="top" constant="3" id="hYW-S7-mwP"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBi-ZJ-bZj">
+                                            <rect key="frame" x="250" y="0.0" width="62.5" height="64"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/heroes/5-1" translatesAutoresizingMaskIntoConstraints="NO" id="P9e-Gi-lWD">
+                                                    <rect key="frame" x="3" y="3" width="56.5" height="58"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/cardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="45B-B3-DJm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="62.5" height="64"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="P9e-Gi-lWD" secondAttribute="trailing" constant="3" id="9oO-I6-Lam"/>
+                                                <constraint firstAttribute="trailing" secondItem="45B-B3-DJm" secondAttribute="trailing" id="Gb3-9M-OhV"/>
+                                                <constraint firstAttribute="bottom" secondItem="45B-B3-DJm" secondAttribute="bottom" id="Gc9-ic-bM4"/>
+                                                <constraint firstItem="45B-B3-DJm" firstAttribute="top" secondItem="xBi-ZJ-bZj" secondAttribute="top" id="dnn-96-AbX"/>
+                                                <constraint firstItem="45B-B3-DJm" firstAttribute="leading" secondItem="xBi-ZJ-bZj" secondAttribute="leading" id="e5U-mO-0xf"/>
+                                                <constraint firstItem="P9e-Gi-lWD" firstAttribute="top" secondItem="xBi-ZJ-bZj" secondAttribute="top" constant="3" id="g7h-LD-CvE"/>
+                                                <constraint firstAttribute="bottom" secondItem="P9e-Gi-lWD" secondAttribute="bottom" constant="3" id="kit-tc-UN8"/>
+                                                <constraint firstItem="P9e-Gi-lWD" firstAttribute="leading" secondItem="xBi-ZJ-bZj" secondAttribute="leading" constant="3" id="pR5-Re-aWG"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJa-PV-izT">
+                                            <rect key="frame" x="312.5" y="0.0" width="62.5" height="64"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/heroes/6-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZcO-1W-Wdt">
+                                                    <rect key="frame" x="3" y="3" width="56.5" height="58"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/cardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="Q0w-W3-5CT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="62.5" height="64"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Q0w-W3-5CT" secondAttribute="bottom" id="Kra-ji-ClO"/>
+                                                <constraint firstAttribute="trailing" secondItem="Q0w-W3-5CT" secondAttribute="trailing" id="bjf-7T-e5o"/>
+                                                <constraint firstItem="Q0w-W3-5CT" firstAttribute="leading" secondItem="DJa-PV-izT" secondAttribute="leading" id="i0Q-6R-dQM"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZcO-1W-Wdt" secondAttribute="trailing" constant="3" id="iSk-Qg-IfP"/>
+                                                <constraint firstItem="ZcO-1W-Wdt" firstAttribute="leading" secondItem="DJa-PV-izT" secondAttribute="leading" constant="3" id="j1a-qQ-VRp"/>
+                                                <constraint firstItem="ZcO-1W-Wdt" firstAttribute="top" secondItem="DJa-PV-izT" secondAttribute="top" constant="3" id="rjO-bR-J60"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZcO-1W-Wdt" secondAttribute="bottom" constant="3" id="tZ9-my-x61"/>
+                                                <constraint firstItem="Q0w-W3-5CT" firstAttribute="top" secondItem="DJa-PV-izT" secondAttribute="top" id="tfd-po-llT"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="64" id="dGi-Sq-osI"/>
+                                    </constraints>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsH-JF-U2U">
+                                    <rect key="frame" x="0.0" y="548" width="375" height="38"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="38" id="gYe-DG-RUN"/>
+                                    </constraints>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="前往查看三国英雄图鉴百科" backgroundImage="sanguo/home_button"/>
+                                    <connections>
+                                        <action selector="tapWiki:" destination="-1" eventType="touchUpInside" id="FMw-k3-DJE"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="独创的区块链抽卡玩法" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1H-Zt-wdr">
+                                    <rect key="frame" x="60.5" y="601" width="254" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="254" id="1Sv-5S-kMd"/>
+                                        <constraint firstAttribute="height" constant="30" id="Nof-0y-CPh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="以太三国创新推出全新的区块链抽卡玩法。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZb-T8-vdJ">
+                                    <rect key="frame" x="115" y="660" width="252" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="4Fj-jK-A7h"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/cardwhich" translatesAutoresizingMaskIntoConstraints="NO" id="vK7-IC-UCW">
+                                    <rect key="frame" x="8" y="660" width="70" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="frZ-hY-hf7"/>
+                                        <constraint firstAttribute="width" constant="70" id="i6e-ud-aq5"/>
+                                    </constraints>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/heroes/5-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZW4-Jk-QMJ">
-                                    <rect key="frame" x="225" y="0.0" width="75" height="64"/>
-                                </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/heroes/2-1" translatesAutoresizingMaskIntoConstraints="NO" id="lEi-h9-aY8">
-                                    <rect key="frame" x="300" y="0.0" width="75" height="64"/>
-                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通过抽卡方法获得武将卡，将会是唯一的官方卡牌发售渠道。智能卡包中当前包含的卡牌和中奖概率完全公开透明 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcR-2i-etY">
+                                    <rect key="frame" x="115" y="703" width="250" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Kfg-6L-wQu"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iH-eU-I7s">
+                                    <rect key="frame" x="255" y="784" width="110" height="44"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="交易流水" backgroundImage="sanguo/home_button"/>
+                                    <connections>
+                                        <action selector="tapTrans:" destination="-1" eventType="touchUpInside" id="4f7-Bb-wYE"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug0-Hn-eRv">
+                                    <rect key="frame" x="115" y="784" width="110" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="110" id="Je2-Ob-bw6"/>
+                                        <constraint firstAttribute="height" constant="44" id="Pxy-91-NdX"/>
+                                    </constraints>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="前往抽卡" backgroundImage="sanguo/home_button"/>
+                                    <connections>
+                                        <action selector="tapDrawCard:" destination="-1" eventType="touchUpInside" id="ers-Xo-vdf"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYg-Yh-WcL">
+                                    <rect key="frame" x="10" y="313" width="355" height="73"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/iconcard" translatesAutoresizingMaskIntoConstraints="NO" id="9Yr-wp-Bau">
+                                            <rect key="frame" x="10" y="10" width="48" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="30G-93-Kh2"/>
+                                                <constraint firstAttribute="width" constant="48" id="QDI-4D-tDf"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英雄卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hi-VJ-zQB">
+                                            <rect key="frame" x="63" y="10" width="282" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="oBC-9a-k74"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="玩家可使用幸运币抽取独一无二" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYO-fo-Ch6">
+                                            <rect key="frame" x="63" y="36" width="282" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Dzp-1u-zpQ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="9Yr-wp-Bau" firstAttribute="top" secondItem="TYg-Yh-WcL" secondAttribute="top" constant="10" id="2UG-eS-Ff9"/>
+                                        <constraint firstItem="TYO-fo-Ch6" firstAttribute="trailing" secondItem="9Hi-VJ-zQB" secondAttribute="trailing" id="7XN-dj-nvq"/>
+                                        <constraint firstItem="9Yr-wp-Bau" firstAttribute="leading" secondItem="TYg-Yh-WcL" secondAttribute="leading" constant="10" id="HOz-nC-oi7"/>
+                                        <constraint firstAttribute="trailing" secondItem="9Hi-VJ-zQB" secondAttribute="trailing" constant="10" id="YpF-5C-Oth"/>
+                                        <constraint firstItem="9Hi-VJ-zQB" firstAttribute="top" secondItem="TYg-Yh-WcL" secondAttribute="top" constant="10" id="aKe-Mq-4ps"/>
+                                        <constraint firstAttribute="height" constant="73" id="iH6-8N-tbI"/>
+                                        <constraint firstItem="TYO-fo-Ch6" firstAttribute="top" secondItem="9Hi-VJ-zQB" secondAttribute="bottom" constant="5" id="lfd-Fj-LdB"/>
+                                        <constraint firstItem="TYO-fo-Ch6" firstAttribute="leading" secondItem="9Hi-VJ-zQB" secondAttribute="leading" id="nF0-lT-MyR"/>
+                                        <constraint firstItem="9Hi-VJ-zQB" firstAttribute="leading" secondItem="9Yr-wp-Bau" secondAttribute="trailing" constant="5" id="oyC-oL-yjk"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uet-Bh-aXP">
+                                    <rect key="frame" x="10" y="391" width="355" height="73"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/iconcoin" translatesAutoresizingMaskIntoConstraints="NO" id="9M9-bf-bo5">
+                                            <rect key="frame" x="10" y="10" width="48" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="48" id="158-UD-TK5"/>
+                                                <constraint firstAttribute="height" constant="48" id="dZG-Yn-L2h"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="幸运币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrV-gP-Ggj">
+                                            <rect key="frame" x="63" y="10" width="282" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="GQt-1g-fOV"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="幸运币市场每天都会售卖一枚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huN-r0-G1s">
+                                            <rect key="frame" x="63" y="36" width="282" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="s8C-Q1-kl0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="BrV-gP-Ggj" secondAttribute="trailing" constant="10" id="0kK-uw-J79"/>
+                                        <constraint firstItem="9M9-bf-bo5" firstAttribute="top" secondItem="uet-Bh-aXP" secondAttribute="top" constant="10" id="9D8-V2-BOt"/>
+                                        <constraint firstItem="BrV-gP-Ggj" firstAttribute="leading" secondItem="9M9-bf-bo5" secondAttribute="trailing" constant="5" id="Mj4-ug-TV3"/>
+                                        <constraint firstItem="huN-r0-G1s" firstAttribute="leading" secondItem="BrV-gP-Ggj" secondAttribute="leading" id="Nz3-vy-LEE"/>
+                                        <constraint firstItem="huN-r0-G1s" firstAttribute="trailing" secondItem="BrV-gP-Ggj" secondAttribute="trailing" id="PuL-LA-iVk"/>
+                                        <constraint firstItem="huN-r0-G1s" firstAttribute="top" secondItem="BrV-gP-Ggj" secondAttribute="bottom" constant="5" id="cvh-LT-qKa"/>
+                                        <constraint firstItem="9M9-bf-bo5" firstAttribute="leading" secondItem="uet-Bh-aXP" secondAttribute="leading" constant="10" id="eik-io-Sfp"/>
+                                        <constraint firstAttribute="height" constant="73" id="lJC-CK-cfT"/>
+                                        <constraint firstItem="BrV-gP-Ggj" firstAttribute="top" secondItem="uet-Bh-aXP" secondAttribute="top" constant="10" id="u95-PX-3sx"/>
+                                    </constraints>
+                                </view>
                             </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="64" id="dGi-Sq-osI"/>
+                                <constraint firstItem="o7T-n2-cu1" firstAttribute="top" secondItem="Mbb-T4-ndn" secondAttribute="bottom" constant="10" id="1Xk-YW-t4k"/>
+                                <constraint firstItem="o7T-n2-cu1" firstAttribute="leading" secondItem="uAT-jo-aMb" secondAttribute="leading" constant="10" id="1l9-ZG-9bg"/>
+                                <constraint firstItem="Ug0-Hn-eRv" firstAttribute="leading" secondItem="IcR-2i-etY" secondAttribute="leading" id="37h-fZ-Z2z"/>
+                                <constraint firstItem="DsH-JF-U2U" firstAttribute="centerX" secondItem="uAT-jo-aMb" secondAttribute="centerX" id="4uw-yN-iXR"/>
+                                <constraint firstAttribute="trailing" secondItem="TYg-Yh-WcL" secondAttribute="trailing" constant="10" id="8sb-ol-ijW"/>
+                                <constraint firstItem="5iH-eU-I7s" firstAttribute="height" secondItem="Ug0-Hn-eRv" secondAttribute="height" id="Bst-jw-MuJ"/>
+                                <constraint firstItem="5iH-eU-I7s" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ug0-Hn-eRv" secondAttribute="trailing" constant="5" id="CDE-Wg-MdA"/>
+                                <constraint firstItem="Mbb-T4-ndn" firstAttribute="top" secondItem="uAT-jo-aMb" secondAttribute="top" id="DHa-tY-4Re"/>
+                                <constraint firstItem="sXN-0P-8rx" firstAttribute="top" secondItem="2Fq-O5-tNc" secondAttribute="bottom" id="EbJ-7g-SPd"/>
+                                <constraint firstItem="uet-Bh-aXP" firstAttribute="top" secondItem="TYg-Yh-WcL" secondAttribute="bottom" constant="5" id="Edx-Sy-lfK"/>
+                                <constraint firstItem="vK7-IC-UCW" firstAttribute="top" secondItem="R1H-Zt-wdr" secondAttribute="bottom" constant="29" id="GYy-Sx-SxS"/>
+                                <constraint firstItem="wQN-sI-fLD" firstAttribute="top" secondItem="sXN-0P-8rx" secondAttribute="bottom" id="I9b-Qp-TbK"/>
+                                <constraint firstItem="DsH-JF-U2U" firstAttribute="top" secondItem="KjH-8R-cS6" secondAttribute="bottom" constant="10" id="JpQ-he-9lb"/>
+                                <constraint firstItem="Ug0-Hn-eRv" firstAttribute="top" secondItem="IcR-2i-etY" secondAttribute="bottom" constant="21" id="QNK-pI-5oq"/>
+                                <constraint firstAttribute="trailing" secondItem="o7T-n2-cu1" secondAttribute="trailing" constant="10" id="R6g-TY-TDA"/>
+                                <constraint firstAttribute="trailing" secondItem="Mbb-T4-ndn" secondAttribute="trailing" id="S45-UM-MUP"/>
+                                <constraint firstAttribute="height" constant="1000" id="SMy-ZD-uvv"/>
+                                <constraint firstItem="2Fq-O5-tNc" firstAttribute="centerX" secondItem="uAT-jo-aMb" secondAttribute="centerX" id="XFt-Q0-Xv8"/>
+                                <constraint firstItem="KjH-8R-cS6" firstAttribute="top" secondItem="uet-Bh-aXP" secondAttribute="bottom" constant="10" id="Y63-m1-lSQ"/>
+                                <constraint firstItem="wQN-sI-fLD" firstAttribute="centerX" secondItem="uAT-jo-aMb" secondAttribute="centerX" id="aIr-xM-Cn0"/>
+                                <constraint firstItem="Mbb-T4-ndn" firstAttribute="leading" secondItem="uAT-jo-aMb" secondAttribute="leading" id="d5R-Fz-Snf"/>
+                                <constraint firstItem="R1H-Zt-wdr" firstAttribute="top" secondItem="DsH-JF-U2U" secondAttribute="bottom" constant="15" id="d91-tC-XoF"/>
+                                <constraint firstAttribute="trailing" secondItem="IZb-T8-vdJ" secondAttribute="trailing" constant="8" id="diC-o8-VNb"/>
+                                <constraint firstItem="DsH-JF-U2U" firstAttribute="width" secondItem="KjH-8R-cS6" secondAttribute="width" id="fGx-Mj-13s"/>
+                                <constraint firstItem="sXN-0P-8rx" firstAttribute="centerX" secondItem="uAT-jo-aMb" secondAttribute="centerX" id="gpR-R3-bCI"/>
+                                <constraint firstItem="KjH-8R-cS6" firstAttribute="width" secondItem="uAT-jo-aMb" secondAttribute="width" id="hmA-AV-mRT"/>
+                                <constraint firstItem="vK7-IC-UCW" firstAttribute="leading" secondItem="uAT-jo-aMb" secondAttribute="leading" constant="8" id="k0v-Mx-uKJ"/>
+                                <constraint firstItem="2Fq-O5-tNc" firstAttribute="top" secondItem="uAT-jo-aMb" secondAttribute="top" constant="41" id="kdw-VD-XVZ"/>
+                                <constraint firstItem="IZb-T8-vdJ" firstAttribute="top" secondItem="R1H-Zt-wdr" secondAttribute="bottom" constant="29" id="l6N-Zx-KrW"/>
+                                <constraint firstItem="TYg-Yh-WcL" firstAttribute="leading" secondItem="uAT-jo-aMb" secondAttribute="leading" constant="10" id="nOf-BP-aaL"/>
+                                <constraint firstAttribute="trailing" secondItem="IcR-2i-etY" secondAttribute="trailing" constant="10" id="njg-eS-ooO"/>
+                                <constraint firstItem="uet-Bh-aXP" firstAttribute="leading" secondItem="uAT-jo-aMb" secondAttribute="leading" constant="10" id="qx0-IW-OUG"/>
+                                <constraint firstItem="IcR-2i-etY" firstAttribute="top" secondItem="IZb-T8-vdJ" secondAttribute="bottom" constant="25" id="r9c-DX-sm2"/>
+                                <constraint firstItem="5iH-eU-I7s" firstAttribute="width" secondItem="Ug0-Hn-eRv" secondAttribute="width" id="rig-AM-Ugr"/>
+                                <constraint firstItem="5iH-eU-I7s" firstAttribute="centerY" secondItem="Ug0-Hn-eRv" secondAttribute="centerY" id="rlf-gE-Xq4"/>
+                                <constraint firstItem="KjH-8R-cS6" firstAttribute="centerX" secondItem="uAT-jo-aMb" secondAttribute="centerX" id="sS9-Z4-cBp"/>
+                                <constraint firstAttribute="trailing" secondItem="uet-Bh-aXP" secondAttribute="trailing" constant="10" id="sZQ-xB-peg"/>
+                                <constraint firstItem="IcR-2i-etY" firstAttribute="leading" secondItem="IZb-T8-vdJ" secondAttribute="leading" id="snY-CA-3nf"/>
+                                <constraint firstItem="TYg-Yh-WcL" firstAttribute="top" secondItem="o7T-n2-cu1" secondAttribute="bottom" constant="10" id="u0Q-1Q-8GR"/>
+                                <constraint firstItem="R1H-Zt-wdr" firstAttribute="centerX" secondItem="uAT-jo-aMb" secondAttribute="centerX" id="vx7-co-ukK"/>
+                                <constraint firstItem="IZb-T8-vdJ" firstAttribute="leading" secondItem="vK7-IC-UCW" secondAttribute="trailing" constant="37" id="xNN-Ty-X46"/>
+                                <constraint firstAttribute="trailing" secondItem="5iH-eU-I7s" secondAttribute="trailing" constant="10" id="zKD-2G-K5Z"/>
                             </constraints>
-                        </stackView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsH-JF-U2U">
-                            <rect key="frame" x="0.0" y="346" width="375" height="38"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="38" id="gYe-DG-RUN"/>
-                            </constraints>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="前往查看三国英雄图鉴百科" backgroundImage="sanguo/home_button"/>
-                            <connections>
-                                <action selector="tapWiki:" destination="-1" eventType="touchUpInside" id="FMw-k3-DJE"/>
-                            </connections>
-                        </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="独创的区块链抽卡玩法" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1H-Zt-wdr">
-                            <rect key="frame" x="60.5" y="399" width="254" height="30"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="254" id="1Sv-5S-kMd"/>
-                                <constraint firstAttribute="height" constant="30" id="Nof-0y-CPh"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="以太三国创新推出全新的区块链抽卡玩法。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZb-T8-vdJ">
-                            <rect key="frame" x="115" y="458" width="252" height="18"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="18" id="4Fj-jK-A7h"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/cardwhich" translatesAutoresizingMaskIntoConstraints="NO" id="vK7-IC-UCW">
-                            <rect key="frame" x="8" y="458" width="70" height="70"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="70" id="frZ-hY-hf7"/>
-                                <constraint firstAttribute="width" constant="70" id="i6e-ud-aq5"/>
-                            </constraints>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通过抽卡方法获得武将卡，将会是唯一的官方卡牌发售渠道。智能卡包中当前包含的卡牌和中奖概率完全公开透明 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcR-2i-etY">
-                            <rect key="frame" x="115" y="501" width="250" height="60"/>
-                            <constraints>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Kfg-6L-wQu"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iH-eU-I7s">
-                            <rect key="frame" x="255" y="582" width="110" height="44"/>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="交易流水" backgroundImage="sanguo/home_button"/>
-                            <connections>
-                                <action selector="tapTrans:" destination="-1" eventType="touchUpInside" id="4f7-Bb-wYE"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug0-Hn-eRv">
-                            <rect key="frame" x="115" y="582" width="110" height="44"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="110" id="Je2-Ob-bw6"/>
-                                <constraint firstAttribute="height" constant="44" id="Pxy-91-NdX"/>
-                            </constraints>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="前往抽卡" backgroundImage="sanguo/home_button"/>
-                            <connections>
-                                <action selector="tapDrawCard:" destination="-1" eventType="touchUpInside" id="ers-Xo-vdf"/>
-                            </connections>
-                        </button>
+                        </view>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="Ug0-Hn-eRv" firstAttribute="leading" secondItem="IcR-2i-etY" secondAttribute="leading" id="37h-fZ-Z2z"/>
-                        <constraint firstItem="DsH-JF-U2U" firstAttribute="centerX" secondItem="uAT-jo-aMb" secondAttribute="centerX" id="4uw-yN-iXR"/>
-                        <constraint firstItem="5iH-eU-I7s" firstAttribute="height" secondItem="Ug0-Hn-eRv" secondAttribute="height" id="Bst-jw-MuJ"/>
-                        <constraint firstItem="5iH-eU-I7s" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ug0-Hn-eRv" secondAttribute="trailing" constant="5" id="CDE-Wg-MdA"/>
-                        <constraint firstItem="Mbb-T4-ndn" firstAttribute="top" secondItem="uAT-jo-aMb" secondAttribute="top" id="DHa-tY-4Re"/>
-                        <constraint firstItem="sXN-0P-8rx" firstAttribute="top" secondItem="2Fq-O5-tNc" secondAttribute="bottom" id="EbJ-7g-SPd"/>
-                        <constraint firstItem="vK7-IC-UCW" firstAttribute="top" secondItem="R1H-Zt-wdr" secondAttribute="bottom" constant="29" id="GYy-Sx-SxS"/>
-                        <constraint firstItem="wQN-sI-fLD" firstAttribute="top" secondItem="sXN-0P-8rx" secondAttribute="bottom" id="I9b-Qp-TbK"/>
-                        <constraint firstItem="DsH-JF-U2U" firstAttribute="top" secondItem="KjH-8R-cS6" secondAttribute="bottom" constant="10" id="JpQ-he-9lb"/>
-                        <constraint firstItem="Ug0-Hn-eRv" firstAttribute="top" secondItem="IcR-2i-etY" secondAttribute="bottom" constant="21" id="QNK-pI-5oq"/>
-                        <constraint firstAttribute="trailing" secondItem="Mbb-T4-ndn" secondAttribute="trailing" id="S45-UM-MUP"/>
-                        <constraint firstItem="2Fq-O5-tNc" firstAttribute="centerX" secondItem="uAT-jo-aMb" secondAttribute="centerX" id="XFt-Q0-Xv8"/>
-                        <constraint firstItem="KjH-8R-cS6" firstAttribute="top" secondItem="Mbb-T4-ndn" secondAttribute="bottom" constant="20" id="Y63-m1-lSQ"/>
-                        <constraint firstItem="wQN-sI-fLD" firstAttribute="centerX" secondItem="uAT-jo-aMb" secondAttribute="centerX" id="aIr-xM-Cn0"/>
-                        <constraint firstAttribute="height" priority="200" constant="788" id="czZ-a2-nna"/>
-                        <constraint firstItem="Mbb-T4-ndn" firstAttribute="leading" secondItem="uAT-jo-aMb" secondAttribute="leading" id="d5R-Fz-Snf"/>
-                        <constraint firstItem="R1H-Zt-wdr" firstAttribute="top" secondItem="DsH-JF-U2U" secondAttribute="bottom" constant="15" id="d91-tC-XoF"/>
-                        <constraint firstAttribute="trailing" secondItem="IZb-T8-vdJ" secondAttribute="trailing" constant="8" id="diC-o8-VNb"/>
-                        <constraint firstItem="DsH-JF-U2U" firstAttribute="width" secondItem="KjH-8R-cS6" secondAttribute="width" id="fGx-Mj-13s"/>
-                        <constraint firstItem="sXN-0P-8rx" firstAttribute="centerX" secondItem="uAT-jo-aMb" secondAttribute="centerX" id="gpR-R3-bCI"/>
-                        <constraint firstItem="KjH-8R-cS6" firstAttribute="width" secondItem="uAT-jo-aMb" secondAttribute="width" id="hmA-AV-mRT"/>
-                        <constraint firstItem="vK7-IC-UCW" firstAttribute="leading" secondItem="uAT-jo-aMb" secondAttribute="leading" constant="8" id="k0v-Mx-uKJ"/>
-                        <constraint firstItem="2Fq-O5-tNc" firstAttribute="top" secondItem="uAT-jo-aMb" secondAttribute="top" constant="41" id="kdw-VD-XVZ"/>
-                        <constraint firstItem="IZb-T8-vdJ" firstAttribute="top" secondItem="R1H-Zt-wdr" secondAttribute="bottom" constant="29" id="l6N-Zx-KrW"/>
-                        <constraint firstAttribute="trailing" secondItem="IcR-2i-etY" secondAttribute="trailing" constant="10" id="njg-eS-ooO"/>
-                        <constraint firstItem="IcR-2i-etY" firstAttribute="top" secondItem="IZb-T8-vdJ" secondAttribute="bottom" constant="25" id="r9c-DX-sm2"/>
-                        <constraint firstItem="5iH-eU-I7s" firstAttribute="width" secondItem="Ug0-Hn-eRv" secondAttribute="width" id="rig-AM-Ugr"/>
-                        <constraint firstItem="5iH-eU-I7s" firstAttribute="centerY" secondItem="Ug0-Hn-eRv" secondAttribute="centerY" id="rlf-gE-Xq4"/>
-                        <constraint firstItem="KjH-8R-cS6" firstAttribute="centerX" secondItem="uAT-jo-aMb" secondAttribute="centerX" id="sS9-Z4-cBp"/>
-                        <constraint firstItem="IcR-2i-etY" firstAttribute="leading" secondItem="IZb-T8-vdJ" secondAttribute="leading" id="snY-CA-3nf"/>
-                        <constraint firstItem="R1H-Zt-wdr" firstAttribute="centerX" secondItem="uAT-jo-aMb" secondAttribute="centerX" id="vx7-co-ukK"/>
-                        <constraint firstItem="IZb-T8-vdJ" firstAttribute="leading" secondItem="vK7-IC-UCW" secondAttribute="trailing" constant="37" id="xNN-Ty-X46"/>
-                        <constraint firstAttribute="trailing" secondItem="5iH-eU-I7s" secondAttribute="trailing" constant="10" id="zKD-2G-K5Z"/>
+                        <constraint firstItem="uAT-jo-aMb" firstAttribute="leading" secondItem="xUL-Bl-tBF" secondAttribute="leading" id="5Xk-RA-ks1"/>
+                        <constraint firstAttribute="bottom" secondItem="uAT-jo-aMb" secondAttribute="bottom" id="9wz-sa-rYX"/>
+                        <constraint firstAttribute="trailing" secondItem="uAT-jo-aMb" secondAttribute="trailing" id="cQP-g7-KzF"/>
+                        <constraint firstItem="uAT-jo-aMb" firstAttribute="top" secondItem="xUL-Bl-tBF" secondAttribute="top" id="yrT-do-2pM"/>
                     </constraints>
-                </view>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uAT-jo-aMb" secondAttribute="trailing" id="1KT-Ey-7sY"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="uAT-jo-aMb" secondAttribute="top" constant="20" id="hje-xA-tbT"/>
-                <constraint firstItem="uAT-jo-aMb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lv6-YR-WMv"/>
+                <constraint firstItem="uAT-jo-aMb" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Wjf-gT-bfL"/>
+                <constraint firstItem="xUL-Bl-tBF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aQ6-nd-nNm"/>
+                <constraint firstItem="xUL-Bl-tBF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="jHD-BM-qWS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xUL-Bl-tBF" secondAttribute="bottom" id="vFM-0s-v3P"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xUL-Bl-tBF" secondAttribute="trailing" id="yYv-fW-FG1"/>
             </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="130.40000000000001" y="142.57871064467767"/>
+            <point key="canvasLocation" x="130.40000000000001" y="327.4362818590705"/>
         </view>
     </objects>
     <resources>
+        <image name="sanguo/cardBorder" width="240" height="240"/>
         <image name="sanguo/cardwhich" width="491" height="491"/>
         <image name="sanguo/heroes/1-1" width="240" height="240"/>
         <image name="sanguo/heroes/2-1" width="240" height="240"/>
         <image name="sanguo/heroes/3-1" width="240" height="240"/>
         <image name="sanguo/heroes/4-1" width="240" height="240"/>
         <image name="sanguo/heroes/5-1" width="240" height="240"/>
+        <image name="sanguo/heroes/6-1" width="240" height="240"/>
         <image name="sanguo/homeBG" width="3500" height="1969"/>
         <image name="sanguo/home_btn2" width="266" height="95"/>
         <image name="sanguo/home_button" width="238" height="97"/>
+        <image name="sanguo/iconcard" width="180" height="180"/>
+        <image name="sanguo/iconcoin" width="180" height="180"/>
         <image name="sanguo/logo" width="1137" height="987"/>
     </resources>
 </document>

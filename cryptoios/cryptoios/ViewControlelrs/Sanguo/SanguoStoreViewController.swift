@@ -27,6 +27,13 @@ class SanguoStoreViewController: UIViewController {
         changeToSection(idx: 0)
     }
     
+    @IBAction func tapDrawCard(_ sender: Any) {
+        
+        let vc = SanguoDrawCardViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
     @IBAction func sectionChanged(_ sender: Any) {
         let seg = sender as! UISegmentedControl
         
