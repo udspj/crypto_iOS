@@ -75,6 +75,8 @@ class MeMainViewController: UIViewController {
         do {
             let ethContractAddress = Address("0xc6d6d2c0eb7d64467ad02efc54496cdfc2fe55d6")
             let infura = Web3(infura: .kovan)
+            let keystoreManager = usermanager.bip32keystoreManager
+            infura.addKeystoreManager(keystoreManager)
             // 1
             let contract = try infura.contract(drawabi, at: ethContractAddress)
             // 2

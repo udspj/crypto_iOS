@@ -65,9 +65,10 @@ import web3swift
 class UserManager: NSObject {
     
     let userDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+    var bip32keystoreManager:KeystoreManager?
     
     internal func getUserAddress() -> Address? {
-        let bip32keystoreManager = KeystoreManager.managerForPath(userDir + "/bip32_keystore", scanForHDwallets: true)
+        bip32keystoreManager = KeystoreManager.managerForPath(userDir + "/bip32_keystore", scanForHDwallets: true)
         var bip32ks: BIP32Keystore?
         if (bip32keystoreManager?.addresses.count == 0) {
             return ""
@@ -77,6 +78,10 @@ class UserManager: NSObject {
         let bip32sender = bip32ks?.addresses.first
         return bip32sender
     }
+    
+//    internal func getKeystoreManager() -> KeystoreManager? {
+//        return bip32keystoreManager
+//    }
     
     internal func setUserAddressBy(mnemonics: String, password: String) -> Void {
         var bip32ks: BIP32Keystore?
