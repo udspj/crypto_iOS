@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IdolShareViewController" customModule="cryptoios" customModuleProvider="target">
             <connections>
+                <outlet property="refLinkField" destination="Pmf-7Z-2aX" id="9oh-mO-Aip"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,81 +20,96 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="邀请好友 Referral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLy-O0-Ydz">
-                    <rect key="frame" x="16" y="150" width="147" height="22"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="推荐好友玩Link Idol可获得5%消费额的奖励！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5n5-gU-9mQ">
-                    <rect key="frame" x="16" y="180" width="289" height="17"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="你的邀请链接：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9h-t6-rII">
-                    <rect key="frame" x="16" y="222" width="129" height="22"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pmf-7Z-2aX">
-                    <rect key="frame" x="16" y="259" width="264" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qef-nN-Wuf">
-                    <rect key="frame" x="288" y="259" width="71" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.18823529411764706" green="0.80392156862745101" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="复制链接">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDC-1H-Zeb">
-                    <rect key="frame" x="37" y="384" width="30" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="FB"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wc9-aG-0Yh">
-                    <rect key="frame" x="84" y="384" width="48" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Twitter"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXD-CN-Zdg">
-                    <rect key="frame" x="156" y="384" width="30" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Sina"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THo-wt-MEK">
-                    <rect key="frame" x="207" y="384" width="30" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Line"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQV-Qa-4hN">
-                    <rect key="frame" x="254" y="384" width="37" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Code"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j10-yA-TIi">
-                    <rect key="frame" x="309" y="384" width="30" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Link"/>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="分享到社交网络" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFH-yZ-0qj">
-                    <rect key="frame" x="16" y="342" width="129" height="22"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geg-hw-jgu">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJa-zF-rhl">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请好友 Referral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLy-O0-Ydz">
+                                    <rect key="frame" x="20" y="20" width="335" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="ZAI-9h-fc8"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐好友玩Link Idol可获得5%消费额的奖励！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5n5-gU-9mQ">
+                                    <rect key="frame" x="20" y="52" width="335" height="17"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="17" id="aZK-PX-oPN"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你的邀请链接：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9h-t6-rII">
+                                    <rect key="frame" x="20" y="89" width="335" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="4Nr-Ee-2CI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pmf-7Z-2aX">
+                                    <rect key="frame" x="20" y="121" width="335" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="1MI-li-VpP"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5g-PW-GBx">
+                                    <rect key="frame" x="133.5" y="181" width="108" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="duU-Cx-YhP"/>
+                                        <constraint firstAttribute="width" constant="108" id="ySh-tz-Dbi"/>
+                                    </constraints>
+                                    <state key="normal" title="分享到社交网络"/>
+                                    <connections>
+                                        <action selector="tapShare:" destination="-1" eventType="touchUpInside" id="Irg-s0-tPX"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="o5g-PW-GBx" firstAttribute="top" secondItem="Pmf-7Z-2aX" secondAttribute="bottom" constant="30" id="00q-zI-pyr"/>
+                                <constraint firstAttribute="trailing" secondItem="5n5-gU-9mQ" secondAttribute="trailing" constant="20" id="3Ct-xP-OSq"/>
+                                <constraint firstAttribute="trailing" secondItem="v9h-t6-rII" secondAttribute="trailing" constant="20" id="Dz0-ww-0of"/>
+                                <constraint firstAttribute="trailing" secondItem="gLy-O0-Ydz" secondAttribute="trailing" constant="20" id="GgQ-Mi-fH6"/>
+                                <constraint firstItem="Pmf-7Z-2aX" firstAttribute="leading" secondItem="gJa-zF-rhl" secondAttribute="leading" constant="20" id="S0w-m0-zJW"/>
+                                <constraint firstAttribute="height" constant="500" id="T0s-pR-R2R"/>
+                                <constraint firstItem="Pmf-7Z-2aX" firstAttribute="top" secondItem="v9h-t6-rII" secondAttribute="bottom" constant="10" id="TmG-fu-3hD"/>
+                                <constraint firstItem="5n5-gU-9mQ" firstAttribute="top" secondItem="gLy-O0-Ydz" secondAttribute="bottom" constant="10" id="We6-Kc-N01"/>
+                                <constraint firstItem="o5g-PW-GBx" firstAttribute="centerX" secondItem="gJa-zF-rhl" secondAttribute="centerX" id="eFY-5U-FzE"/>
+                                <constraint firstItem="v9h-t6-rII" firstAttribute="top" secondItem="5n5-gU-9mQ" secondAttribute="bottom" constant="20" id="h3a-hy-sCg"/>
+                                <constraint firstItem="gLy-O0-Ydz" firstAttribute="leading" secondItem="gJa-zF-rhl" secondAttribute="leading" constant="20" id="iUY-tf-Kop"/>
+                                <constraint firstItem="v9h-t6-rII" firstAttribute="leading" secondItem="gJa-zF-rhl" secondAttribute="leading" constant="20" id="idJ-wv-yZ8"/>
+                                <constraint firstAttribute="trailing" secondItem="Pmf-7Z-2aX" secondAttribute="trailing" constant="20" id="p9q-2F-uez"/>
+                                <constraint firstItem="5n5-gU-9mQ" firstAttribute="leading" secondItem="gJa-zF-rhl" secondAttribute="leading" constant="20" id="rND-ma-n9f"/>
+                                <constraint firstItem="gLy-O0-Ydz" firstAttribute="top" secondItem="gJa-zF-rhl" secondAttribute="top" constant="20" id="wcs-s1-o25"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gJa-zF-rhl" firstAttribute="top" secondItem="geg-hw-jgu" secondAttribute="top" id="QsG-lV-UXT"/>
+                        <constraint firstAttribute="trailing" secondItem="gJa-zF-rhl" secondAttribute="trailing" id="fep-rr-FSq"/>
+                        <constraint firstAttribute="bottom" secondItem="gJa-zF-rhl" secondAttribute="bottom" id="ffg-5b-3kC"/>
+                        <constraint firstItem="gJa-zF-rhl" firstAttribute="leading" secondItem="geg-hw-jgu" secondAttribute="leading" id="wva-9A-SLD"/>
+                    </constraints>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gJa-zF-rhl" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Bm2-ti-n0q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="geg-hw-jgu" secondAttribute="bottom" id="JkS-Gy-E72"/>
+                <constraint firstAttribute="trailing" secondItem="geg-hw-jgu" secondAttribute="trailing" id="XQu-3S-juo"/>
+                <constraint firstItem="geg-hw-jgu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rKc-gT-YPU"/>
+                <constraint firstItem="geg-hw-jgu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="yaE-lR-ite"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="130.40000000000001" y="115.59220389805098"/>
         </view>

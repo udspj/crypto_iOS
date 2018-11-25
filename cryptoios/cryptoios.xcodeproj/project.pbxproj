@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4346B24021A18ACE006A2CFD /* SanguoWikiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4346B23E21A18ACE006A2CFD /* SanguoWikiCollectionViewCell.swift */; };
-		4346B24121A18ACE006A2CFD /* SanguoWikiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4346B23F21A18ACE006A2CFD /* SanguoWikiCollectionViewCell.xib */; };
 		4346B24521A19911006A2CFD /* HeroAttCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4346B24321A19911006A2CFD /* HeroAttCollectionViewCell.swift */; };
 		4346B24621A19911006A2CFD /* HeroAttCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4346B24421A19911006A2CFD /* HeroAttCollectionViewCell.xib */; };
+		4362179A21AAB91A00182F0D /* SanguoWikiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4362179821AAB91A00182F0D /* SanguoWikiTableViewCell.swift */; };
+		4362179B21AAB91A00182F0D /* SanguoWikiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4362179921AAB91A00182F0D /* SanguoWikiTableViewCell.xib */; };
 		43ADBC422193342900214B55 /* IdolLinkMainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADBC402193342900214B55 /* IdolLinkMainHeader.swift */; };
 		43ADBC432193342900214B55 /* IdolLinkMainHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43ADBC412193342900214B55 /* IdolLinkMainHeader.xib */; };
 		43ADBC472193408200214B55 /* IdolDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADBC452193408200214B55 /* IdolDetailTableViewCell.swift */; };
@@ -85,10 +85,10 @@
 
 /* Begin PBXFileReference section */
 		3FE4CB8FCB0AA52C230FD388 /* Pods_cryptoios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cryptoios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4346B23E21A18ACE006A2CFD /* SanguoWikiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoWikiCollectionViewCell.swift; sourceTree = "<group>"; };
-		4346B23F21A18ACE006A2CFD /* SanguoWikiCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanguoWikiCollectionViewCell.xib; sourceTree = "<group>"; };
 		4346B24321A19911006A2CFD /* HeroAttCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroAttCollectionViewCell.swift; sourceTree = "<group>"; };
 		4346B24421A19911006A2CFD /* HeroAttCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroAttCollectionViewCell.xib; sourceTree = "<group>"; };
+		4362179821AAB91A00182F0D /* SanguoWikiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoWikiTableViewCell.swift; sourceTree = "<group>"; };
+		4362179921AAB91A00182F0D /* SanguoWikiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanguoWikiTableViewCell.xib; sourceTree = "<group>"; };
 		43ADBC402193342900214B55 /* IdolLinkMainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolLinkMainHeader.swift; sourceTree = "<group>"; };
 		43ADBC412193342900214B55 /* IdolLinkMainHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdolLinkMainHeader.xib; sourceTree = "<group>"; };
 		43ADBC452193408200214B55 /* IdolDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -189,8 +189,8 @@
 			children = (
 				43E7FFDE21848F8800FA2F3D /* SanguoWikiViewController.swift */,
 				43E7FFDF21848F8800FA2F3D /* SanguoWikiViewController.xib */,
-				4346B23E21A18ACE006A2CFD /* SanguoWikiCollectionViewCell.swift */,
-				4346B23F21A18ACE006A2CFD /* SanguoWikiCollectionViewCell.xib */,
+				4362179821AAB91A00182F0D /* SanguoWikiTableViewCell.swift */,
+				4362179921AAB91A00182F0D /* SanguoWikiTableViewCell.xib */,
 			);
 			path = Wiki;
 			sourceTree = "<group>";
@@ -481,13 +481,13 @@
 				43E7000D2184963C00FA2F3D /* ShuihuDrawCardViewController.xib in Resources */,
 				43E7FFF92184922D00FA2F3D /* IdolRankViewController.xib in Resources */,
 				43E7001B21871BF800FA2F3D /* IdolLink.xcassets in Resources */,
+				4362179B21AAB91A00182F0D /* SanguoWikiTableViewCell.xib in Resources */,
 				43E700092184962E00FA2F3D /* ShuihuWikiViewController.xib in Resources */,
 				43E7FFBE2184896700FA2F3D /* SanguoMainViewController.xib in Resources */,
 				43E7FFE521848FA200FA2F3D /* SanguoTransViewController.xib in Resources */,
 				43E7FFD921848D1C00FA2F3D /* AssetsViewController.xib in Resources */,
 				43ADBC4D2194652E00214B55 /* Moe.xcassets in Resources */,
 				43E7FFE121848F8800FA2F3D /* SanguoWikiViewController.xib in Resources */,
-				4346B24121A18ACE006A2CFD /* SanguoWikiCollectionViewCell.xib in Resources */,
 				43E7FFF52184921A00FA2F3D /* IdolDrawCardViewController.xib in Resources */,
 				43E7FFD021848B0A00FA2F3D /* MeMainViewController.xib in Resources */,
 				43ADBC592195E13700214B55 /* TujianCell.xib in Resources */,
@@ -577,6 +577,7 @@
 				43E700142184965D00FA2F3D /* ShuihuTransViewController.swift in Sources */,
 				43E700042184961F00FA2F3D /* ShuihuRankViewController.swift in Sources */,
 				43E700002184924E00FA2F3D /* IdolDetailViewController.swift in Sources */,
+				4362179A21AAB91A00182F0D /* SanguoWikiTableViewCell.swift in Sources */,
 				43E700182184973100FA2F3D /* ShuihuCardDetailViewController.swift in Sources */,
 				43E7001E2188A50E00FA2F3D /* IdolLinkCell.swift in Sources */,
 				71EBF74A21A43B3C0026B621 /* UserManager.swift in Sources */,
@@ -591,7 +592,6 @@
 				43E7FFEC2184914900FA2F3D /* SanguoDrawCardViewController.swift in Sources */,
 				43E700102184964E00FA2F3D /* ShuihuShareViewController.swift in Sources */,
 				43E7FFE821848FBE00FA2F3D /* SanguoHeroDetailViewController.swift in Sources */,
-				4346B24021A18ACE006A2CFD /* SanguoWikiCollectionViewCell.swift in Sources */,
 				43E7FFF82184922D00FA2F3D /* IdolRankViewController.swift in Sources */,
 				43E7FF9C2184534D00FA2F3D /* AppDelegate.swift in Sources */,
 				43E7FFC121848A7400FA2F3D /* ShuihuMainViewController.swift in Sources */,
