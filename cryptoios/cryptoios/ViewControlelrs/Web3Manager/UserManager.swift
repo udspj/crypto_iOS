@@ -79,10 +79,6 @@ class UserManager: NSObject {
         return bip32sender
     }
     
-//    internal func getKeystoreManager() -> KeystoreManager? {
-//        return bip32keystoreManager
-//    }
-    
     internal func setUserAddressBy(mnemonics: String, password: String) -> Void {
         var bip32ks: BIP32Keystore?
         do {
