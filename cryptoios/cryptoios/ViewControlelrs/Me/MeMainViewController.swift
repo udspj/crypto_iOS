@@ -71,7 +71,7 @@ class MeMainViewController: UIViewController {
 //                            print(error)
 //                        }
         
-        linkidol.getMyCards(address: Address(addr!.address))
+        linkidol.drawCard(password: "11111111")
         
 //        do {
 //            let ethContractAddress = Address("0xc6d6d2c0eb7d64467ad02efc54496cdfc2fe55d6")
