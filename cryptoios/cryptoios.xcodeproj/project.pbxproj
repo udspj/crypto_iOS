@@ -11,6 +11,8 @@
 		4346B24621A19911006A2CFD /* HeroAttCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4346B24421A19911006A2CFD /* HeroAttCollectionViewCell.xib */; };
 		4362179A21AAB91A00182F0D /* SanguoWikiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4362179821AAB91A00182F0D /* SanguoWikiTableViewCell.swift */; };
 		4362179B21AAB91A00182F0D /* SanguoWikiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4362179921AAB91A00182F0D /* SanguoWikiTableViewCell.xib */; };
+		4362179E21AC2C0F00182F0D /* MoeMainHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4362179C21AC2C0F00182F0D /* MoeMainHeadView.swift */; };
+		4362179F21AC2C0F00182F0D /* MoeMainHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4362179D21AC2C0F00182F0D /* MoeMainHeadView.xib */; };
 		43ADBC422193342900214B55 /* IdolLinkMainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADBC402193342900214B55 /* IdolLinkMainHeader.swift */; };
 		43ADBC432193342900214B55 /* IdolLinkMainHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43ADBC412193342900214B55 /* IdolLinkMainHeader.xib */; };
 		43ADBC472193408200214B55 /* IdolDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADBC452193408200214B55 /* IdolDetailTableViewCell.swift */; };
@@ -76,6 +78,9 @@
 		43E7FFF92184922D00FA2F3D /* IdolRankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFF72184922D00FA2F3D /* IdolRankViewController.xib */; };
 		43E7FFFC2184923D00FA2F3D /* IdolShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFFA2184923D00FA2F3D /* IdolShareViewController.swift */; };
 		43E7FFFD2184923D00FA2F3D /* IdolShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFFB2184923D00FA2F3D /* IdolShareViewController.xib */; };
+		43F0E1D421AC5263003798A1 /* SanguoStoreKapai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F0E1D321AC5263003798A1 /* SanguoStoreKapai.swift */; };
+		43F0E1D921AC546A003798A1 /* SanguoStoreKapaiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F0E1D721AC546A003798A1 /* SanguoStoreKapaiCell.swift */; };
+		43F0E1DA21AC546A003798A1 /* SanguoStoreKapaiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43F0E1D821AC546A003798A1 /* SanguoStoreKapaiCell.xib */; };
 		43FCA47D2199DEAE0021B416 /* SanguoSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCA47C2199DEAE0021B416 /* SanguoSegmentedControl.swift */; };
 		71EBF74A21A43B3C0026B621 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EBF74921A43B3C0026B621 /* UserManager.swift */; };
 		71EBF74C21A5450B0026B621 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EBF74B21A5450B0026B621 /* AddAccountViewController.swift */; };
@@ -89,6 +94,8 @@
 		4346B24421A19911006A2CFD /* HeroAttCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroAttCollectionViewCell.xib; sourceTree = "<group>"; };
 		4362179821AAB91A00182F0D /* SanguoWikiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoWikiTableViewCell.swift; sourceTree = "<group>"; };
 		4362179921AAB91A00182F0D /* SanguoWikiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanguoWikiTableViewCell.xib; sourceTree = "<group>"; };
+		4362179C21AC2C0F00182F0D /* MoeMainHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoeMainHeadView.swift; sourceTree = "<group>"; };
+		4362179D21AC2C0F00182F0D /* MoeMainHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoeMainHeadView.xib; sourceTree = "<group>"; };
 		43ADBC402193342900214B55 /* IdolLinkMainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolLinkMainHeader.swift; sourceTree = "<group>"; };
 		43ADBC412193342900214B55 /* IdolLinkMainHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdolLinkMainHeader.xib; sourceTree = "<group>"; };
 		43ADBC452193408200214B55 /* IdolDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -156,6 +163,9 @@
 		43E7FFFB2184923D00FA2F3D /* IdolShareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdolShareViewController.xib; sourceTree = "<group>"; };
 		43E7FFFE2184924E00FA2F3D /* IdolDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolDetailViewController.swift; sourceTree = "<group>"; };
 		43E7FFFF2184924E00FA2F3D /* IdolDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdolDetailViewController.xib; sourceTree = "<group>"; };
+		43F0E1D321AC5263003798A1 /* SanguoStoreKapai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoStoreKapai.swift; sourceTree = "<group>"; };
+		43F0E1D721AC546A003798A1 /* SanguoStoreKapaiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoStoreKapaiCell.swift; sourceTree = "<group>"; };
+		43F0E1D821AC546A003798A1 /* SanguoStoreKapaiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanguoStoreKapaiCell.xib; sourceTree = "<group>"; };
 		43FCA47C2199DEAE0021B416 /* SanguoSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoSegmentedControl.swift; sourceTree = "<group>"; };
 		71EBF74921A43B3C0026B621 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		71EBF74B21A5450B0026B621 /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +243,8 @@
 				43ADBC4F21949C8A00214B55 /* MoeCardCell.xib */,
 				43E7FFC321848A8100FA2F3D /* MoeMainViewController.swift */,
 				43E7FFC421848A8100FA2F3D /* MoeMainViewController.xib */,
+				4362179C21AC2C0F00182F0D /* MoeMainHeadView.swift */,
+				4362179D21AC2C0F00182F0D /* MoeMainHeadView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -310,8 +322,7 @@
 			children = (
 				43E7FFBB2184896700FA2F3D /* SanguoMainViewController.swift */,
 				43E7FFBC2184896700FA2F3D /* SanguoMainViewController.xib */,
-				43E7FFDA21848F6D00FA2F3D /* SanguoStoreViewController.swift */,
-				43E7FFDB21848F6D00FA2F3D /* SanguoStoreViewController.xib */,
+				43F0E1D521AC5269003798A1 /* Store */,
 				4346B23D21A18AA2006A2CFD /* Wiki */,
 				43E7FFE221848FA200FA2F3D /* SanguoTransViewController.swift */,
 				43E7FFE321848FA200FA2F3D /* SanguoTransViewController.xib */,
@@ -385,6 +396,26 @@
 				71EBF74D21A5451B0026B621 /* AddAccountViewController.xib */,
 			);
 			path = Me;
+			sourceTree = "<group>";
+		};
+		43F0E1D521AC5269003798A1 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				43F0E1D621AC542F003798A1 /* kapai */,
+				43E7FFDA21848F6D00FA2F3D /* SanguoStoreViewController.swift */,
+				43E7FFDB21848F6D00FA2F3D /* SanguoStoreViewController.xib */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		43F0E1D621AC542F003798A1 /* kapai */ = {
+			isa = PBXGroup;
+			children = (
+				43F0E1D321AC5263003798A1 /* SanguoStoreKapai.swift */,
+				43F0E1D721AC546A003798A1 /* SanguoStoreKapaiCell.swift */,
+				43F0E1D821AC546A003798A1 /* SanguoStoreKapaiCell.xib */,
+			);
+			path = kapai;
 			sourceTree = "<group>";
 		};
 		49BEB14F75EB8D4BC50151C2 /* Pods */ = {
@@ -465,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E7FFDD21848F6D00FA2F3D /* SanguoStoreViewController.xib in Resources */,
+				43F0E1DA21AC546A003798A1 /* SanguoStoreKapaiCell.xib in Resources */,
 				43E7FFA62184534F00FA2F3D /* LaunchScreen.storyboard in Resources */,
 				43ADBC482193408200214B55 /* IdolDetailTableViewCell.xib in Resources */,
 				43E7FFA32184534F00FA2F3D /* Assets.xcassets in Resources */,
@@ -501,6 +533,7 @@
 				43ADBC5B2198254400214B55 /* Sanguo.xcassets in Resources */,
 				43E7FFD421848D0400FA2F3D /* TransactionViewController.xib in Resources */,
 				4346B24621A19911006A2CFD /* HeroAttCollectionViewCell.xib in Resources */,
+				4362179F21AC2C0F00182F0D /* MoeMainHeadView.xib in Resources */,
 				43ADBC542195D72200214B55 /* Shuihu.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,10 +603,12 @@
 				43E7FFD821848D1C00FA2F3D /* AssetsViewController.swift in Sources */,
 				4346B24521A19911006A2CFD /* HeroAttCollectionViewCell.swift in Sources */,
 				43ADBC422193342900214B55 /* IdolLinkMainHeader.swift in Sources */,
+				43F0E1D921AC546A003798A1 /* SanguoStoreKapaiCell.swift in Sources */,
 				43E7FFDC21848F6D00FA2F3D /* SanguoStoreViewController.swift in Sources */,
 				43E7FFF42184921A00FA2F3D /* IdolDrawCardViewController.swift in Sources */,
 				43E7FFCA21848AAF00FA2F3D /* IdolLinkMainViewController.swift in Sources */,
 				43E7000C2184963C00FA2F3D /* ShuihuDrawCardViewController.swift in Sources */,
+				4362179E21AC2C0F00182F0D /* MoeMainHeadView.swift in Sources */,
 				43E700142184965D00FA2F3D /* ShuihuTransViewController.swift in Sources */,
 				43E700042184961F00FA2F3D /* ShuihuRankViewController.swift in Sources */,
 				43E700002184924E00FA2F3D /* IdolDetailViewController.swift in Sources */,
@@ -598,6 +633,7 @@
 				43E7FFF02184919400FA2F3D /* MoeCardDetailViewController.swift in Sources */,
 				43ADBC582195E13700214B55 /* TujianCell.swift in Sources */,
 				43E7FFD321848D0400FA2F3D /* TransactionViewController.swift in Sources */,
+				43F0E1D421AC5263003798A1 /* SanguoStoreKapai.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

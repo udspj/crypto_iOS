@@ -8,18 +8,21 @@
 
 import UIKit
 
-class MoeMainViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
+class MoeMainViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     let cellIdentifier = "Cell"
     let headerIdentifier = "headerView"
     var cards : [String:Any]!;
     
+    @IBOutlet var flowLayout: UICollectionViewFlowLayout!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "以太萌王"
         let collectionView = view as! UICollectionView
         
         collectionView.register(UINib(nibName:"MoeCardCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
-        collectionView.register(UINib(nibName: "IdolLinkMainHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerIdentifier)
+        collectionView.register(UINib(nibName: "MoeMainHeadView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerIdentifier)
+        
+        
         
         let asset = NSDataAsset(name:"cards",bundle:Bundle.main);
         let json = try? JSONSerialization.jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments)
@@ -70,12 +73,12 @@ class MoeMainViewController: UIViewController,UICollectionViewDelegate, UICollec
         return cell;
     }
     
-//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//        
-//        let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerView", for: indexPath) as! IdolLinkMainHeader
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerView", for: indexPath) as! MoeMainHeadView
 //        view.delegate = self;
-//        return view;
-//    }
+        return view;
+    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let obj = self.cards[String(indexPath.item+1)] as! [String:Any]
@@ -84,5 +87,16 @@ class MoeMainViewController: UIViewController,UICollectionViewDelegate, UICollec
         
         vc.cardObj = obj
         navigationController?.pushViewController(vc, animated: true);
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let viewSize = view.bounds.size
+        let pad = flowLayout.sectionInset.left + flowLayout.sectionInset.right;
+        
+        let ratio : CGFloat = 190.0 / 420.0
+        let width = (viewSize.width - pad - flowLayout.minimumInteritemSpacing)/2;
+        let height = width / ratio
+        
+        return CGSize(width: width, height: height)
     }
 }

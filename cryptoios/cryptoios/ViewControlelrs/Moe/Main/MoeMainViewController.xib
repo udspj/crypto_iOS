@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoeMainViewController" customModule="cryptoios" customModuleProvider="target">
             <connections>
+                <outlet property="flowLayout" destination="Y32-vp-FK5" id="bqJ-Yn-6ow"/>
                 <outlet property="view" destination="tqN-t4-4Nx" id="2GA-8U-bjq"/>
             </connections>
         </placeholder>
@@ -20,9 +21,9 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Y32-vp-FK5">
                 <size key="itemSize" width="190" height="420"/>
-                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                <size key="headerReferenceSize" width="375" height="180"/>
                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                <inset key="sectionInset" minX="10" minY="20" maxX="10" maxY="0.0"/>
             </collectionViewFlowLayout>
             <connections>
                 <outlet property="dataSource" destination="-1" id="jCV-2B-cQC"/>

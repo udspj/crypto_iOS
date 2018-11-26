@@ -8,9 +8,11 @@
 
 import UIKit
 
-class IdolLinkMainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, IdolLinkMainHeaderDelegate
+class IdolLinkMainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, IdolLinkMainHeaderDelegate
 {
     @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var flowLayout: UICollectionViewFlowLayout!
+
     let cellIdentifier = "IdolCell"
     let headerIdentifier = "headerView"
     var cards : [String:Any]!;
@@ -88,6 +90,17 @@ class IdolLinkMainViewController: UIViewController, UICollectionViewDelegate, UI
         let vc = IdolDetailViewController();
         vc.cardObj = obj
         navigationController?.pushViewController(vc, animated: true);
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let viewSize = view.bounds.size
+        let pad = flowLayout.sectionInset.left + flowLayout.sectionInset.right;
+        
+        let ratio : CGFloat = 190.0 / 355.0
+        let width = (viewSize.width - pad - flowLayout.minimumInteritemSpacing)/2;
+        let height = width / ratio
+        
+        return CGSize(width: width, height: height)
     }
     
     func hexStringToUIColor (hex:String) -> UIColor {
