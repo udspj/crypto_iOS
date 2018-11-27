@@ -30,9 +30,14 @@ class MeMainViewController: UIViewController {
         let addr = usermanager.getUserAddress()
         addrLabel.text = addr!.address
         let web3Main = Web3(infura: .kovan)
-        let balance: BigUInt = try! web3Main.eth.getBalance(address: addr!)
-        print(Double(balance.words[0])/bigint)
-        balLabel.text = "余额："+String(Double(balance.words[0])/bigint)+" eth"
+        let queue = OperationQueue()
+        queue.addOperation { () -> Void in
+            let balance: BigUInt = try! web3Main.eth.getBalance(address: addr!)
+            OperationQueue.main.addOperation({[unowned self] () -> Void in
+                print(Double(balance.words[0])/self.bigint)
+                self.balLabel.text = "余额："+String(Double(balance.words[0])/self.bigint)+" eth"
+            })
+        }
         
         let constractAddress = Address("0x39f8a3ff4e5097e57c777857697836079a51dc1d")
         let contract = ERC721(constractAddress)
