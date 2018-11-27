@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeMainViewController" customModule="cryptoios" customModuleProvider="target">
             <connections>
                 <outlet property="addrLabel" destination="OgW-OJ-kG0" id="r7Y-HS-Mt5"/>
+                <outlet property="avatarImageView" destination="kHK-8c-G2L" id="L8s-j4-Zgd"/>
                 <outlet property="balLabel" destination="xbk-EU-Wo8" id="6Zc-DX-yMm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

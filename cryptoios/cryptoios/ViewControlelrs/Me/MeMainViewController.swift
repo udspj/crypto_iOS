@@ -3,9 +3,11 @@ import UIKit
 import BigInt
 import web3swift
 import Foundation
+import BlockiesSwift
 
 class MeMainViewController: UIViewController {
     
+    @IBOutlet var avatarImageView: UIImageView!
     @IBOutlet var addrLabel: UILabel!
     @IBOutlet var balLabel: UILabel!
     
@@ -22,6 +24,7 @@ class MeMainViewController: UIViewController {
         
         let addr = usermanager.getUserAddress()
         addrLabel.text = addr!.address
+        generateUserAvatar(address: addr!.address)
         let web3Main = Web3(infura: .kovan)
         let queue = OperationQueue()
         queue.addOperation { () -> Void in
@@ -154,6 +157,18 @@ class MeMainViewController: UIViewController {
     func getBlance(address: Address) {
         let balance :BigUInt = try! (web3Main?.eth.getBalance(address: address))!;
         print("balance: \(balance)")
+    }
+    
+    func generateUserAvatar(address: String)  {
+        let blockies = Blockies(
+            seed: address,
+            size: 8,  // 8x8 = 64 blocks.
+            scale: 3 // size of each block
+        )
+        // 8*3 * 10 = 240 x 240 image
+        let img = blockies.createImage(customScale: 10)
+        
+        avatarImageView.image = img
     }
 
 
