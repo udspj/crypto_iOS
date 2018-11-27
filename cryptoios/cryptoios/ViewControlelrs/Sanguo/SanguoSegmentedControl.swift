@@ -1,10 +1,3 @@
-//
-//  SanguoSegmentedControl.swift
-//  cryptoios
-//
-//  Created by Chen Yonghui on 2018/11/13.
-//  Copyright © 2018 udspj. All rights reserved.
-//
 
 import UIKit
 

@@ -1,10 +1,3 @@
-//
-//  UserManager.swift
-//  cryptoios
-//
-//  Created by sunpeijia on 2018/11/20.
-//  Copyright © 2018年 udspj. All rights reserved.
-//
 
 import Foundation
 import web3swift
