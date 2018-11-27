@@ -80,6 +80,7 @@
 		71EBF74A21A43B3C0026B621 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EBF74921A43B3C0026B621 /* UserManager.swift */; };
 		71EBF74C21A5450B0026B621 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EBF74B21A5450B0026B621 /* AddAccountViewController.swift */; };
 		71EBF74E21A5451B0026B621 /* AddAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71EBF74D21A5451B0026B621 /* AddAccountViewController.xib */; };
+		71EBF75021AC29D10026B621 /* Linkidol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EBF74F21AC29D10026B621 /* Linkidol.swift */; };
 		D527C6A44367E720F8326B2C /* Pods_cryptoios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE4CB8FCB0AA52C230FD388 /* Pods_cryptoios.framework */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +161,7 @@
 		71EBF74921A43B3C0026B621 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		71EBF74B21A5450B0026B621 /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
 		71EBF74D21A5451B0026B621 /* AddAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAccountViewController.xib; sourceTree = "<group>"; };
+		71EBF74F21AC29D10026B621 /* Linkidol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Linkidol.swift; sourceTree = "<group>"; };
 		AAA59CE92C74F509FF0CADFE /* Pods-cryptoios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoios.release.xcconfig"; path = "Pods/Target Support Files/Pods-cryptoios/Pods-cryptoios.release.xcconfig"; sourceTree = "<group>"; };
 		D3B871BB9BC0EC91B8AE78CE /* Pods-cryptoios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cryptoios/Pods-cryptoios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -400,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				71EBF74921A43B3C0026B621 /* UserManager.swift */,
+				71EBF74F21AC29D10026B621 /* Linkidol.swift */,
 			);
 			path = Web3Manager;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				43E700042184961F00FA2F3D /* ShuihuRankViewController.swift in Sources */,
 				43E700002184924E00FA2F3D /* IdolDetailViewController.swift in Sources */,
 				4362179A21AAB91A00182F0D /* SanguoWikiTableViewCell.swift in Sources */,
+				71EBF75021AC29D10026B621 /* Linkidol.swift in Sources */,
 				43E700182184973100FA2F3D /* ShuihuCardDetailViewController.swift in Sources */,
 				43E7001E2188A50E00FA2F3D /* IdolLinkCell.swift in Sources */,
 				71EBF74A21A43B3C0026B621 /* UserManager.swift in Sources */,
