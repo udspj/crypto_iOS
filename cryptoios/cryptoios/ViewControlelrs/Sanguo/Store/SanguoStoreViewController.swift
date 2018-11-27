@@ -16,6 +16,8 @@ class SanguoStoreViewController: UIViewController {
     @IBOutlet var sectionView2: UIView!
     @IBOutlet var sectionView3: UIView!
     
+    @IBOutlet var kaipaiSource: SanguoStoreKapai!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +27,9 @@ class SanguoStoreViewController: UIViewController {
         }
         
         changeToSection(idx: 0)
+        
+        kaipaiSource.viewDidLoad()
+        
     }
     
     @IBAction func tapDrawCard(_ sender: Any) {

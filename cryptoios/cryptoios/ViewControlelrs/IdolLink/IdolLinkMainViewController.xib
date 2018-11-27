@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IdolLinkMainViewController" customModule="cryptoios" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="tRC-J8-SvM" id="9xp-T1-3BB"/>
+                <outlet property="flowLayout" destination="Tde-Mf-AT3" id="tFX-vj-Uo9"/>
                 <outlet property="view" destination="tRC-J8-SvM" id="FDn-mw-PCA"/>
             </connections>
         </placeholder>

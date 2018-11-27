@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="SanguoStoreKapaiCell" customModule="cryptoios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="270"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="270"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/heroes/1-1" translatesAutoresizingMaskIntoConstraints="NO" id="pkW-cy-7aU">
+                        <rect key="frame" x="5" y="5" width="185" height="185"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pkW-cy-7aU" secondAttribute="height" multiplier="1:1" id="cd4-C0-dY9"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sanguo/cardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="kF1-wI-bql">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kF1-wI-bql" secondAttribute="height" multiplier="1:1" id="SYy-cB-m9Q"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="孙策" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHb-hP-T1q">
+                        <rect key="frame" x="15" y="206" width="50" height="54"/>
+                        <color key="backgroundColor" red="0.3843137254901961" green="0.33333333333333331" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="EB4-8A-SFI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中奖概率:0.06% 当前价格:-- ETH" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvN-7o-qbf">
+                        <rect key="frame" x="67" y="206" width="113" height="54"/>
+                        <color key="backgroundColor" red="0.50196078431372548" green="0.51764705882352946" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kF1-wI-bql" secondAttribute="trailing" id="1ss-1t-itC"/>
+                <constraint firstItem="uvN-7o-qbf" firstAttribute="leading" secondItem="VHb-hP-T1q" secondAttribute="trailing" constant="2" id="H81-rB-hJe"/>
+                <constraint firstItem="kF1-wI-bql" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IBj-kq-QDl"/>
+                <constraint firstItem="uvN-7o-qbf" firstAttribute="height" secondItem="VHb-hP-T1q" secondAttribute="height" id="JCO-ks-8lg"/>
+                <constraint firstItem="pkW-cy-7aU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="KdE-io-SKT"/>
+                <constraint firstItem="VHb-hP-T1q" firstAttribute="top" secondItem="kF1-wI-bql" secondAttribute="bottom" constant="11" id="Qat-0r-AiO"/>
+                <constraint firstAttribute="trailing" secondItem="uvN-7o-qbf" secondAttribute="trailing" constant="15" id="UXM-T6-QU3"/>
+                <constraint firstItem="VHb-hP-T1q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Z1E-qL-wtS"/>
+                <constraint firstAttribute="bottom" secondItem="VHb-hP-T1q" secondAttribute="bottom" constant="10" id="d3A-Go-Ucy"/>
+                <constraint firstItem="kF1-wI-bql" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hZ9-dW-lXW"/>
+                <constraint firstAttribute="trailing" secondItem="pkW-cy-7aU" secondAttribute="trailing" constant="5" id="jUk-Xj-1X5"/>
+                <constraint firstItem="uvN-7o-qbf" firstAttribute="centerY" secondItem="VHb-hP-T1q" secondAttribute="centerY" id="rgv-85-Ruc"/>
+                <constraint firstItem="pkW-cy-7aU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="w4i-dK-jDs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="193" height="269"/>
+            <connections>
+                <outlet property="descLabel" destination="uvN-7o-qbf" id="mfa-Dm-XPa"/>
+                <outlet property="imageView" destination="pkW-cy-7aU" id="fHc-Qq-Lvm"/>
+                <outlet property="nameLabel" destination="VHb-hP-T1q" id="UoC-Cp-Eup"/>
+            </connections>
+            <point key="canvasLocation" x="244" y="224.4377811094453"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sanguo/cardBorder" width="240" height="240"/>
+        <image name="sanguo/heroes/1-1" width="240" height="240"/>
+    </resources>
+</document>
