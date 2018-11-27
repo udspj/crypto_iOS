@@ -80,7 +80,7 @@ class Linkidol: NSObject {
         return 999
     }
     
-    internal func drawCard(password: String) -> Bool {
+    internal func drawCard(password: String) -> String {
         do {
             let address = usermanager.getUserAddress()
             let keystoreManager = usermanager.bip32keystoreManager
@@ -97,12 +97,12 @@ class Linkidol: NSObject {
             let transactionIntermediate = try contract.method("buy", parameters:[Address("0x0c279cf1b8585a14b432f89af8d23564e8dbd7d5")] as [AnyObject], options: options)
             let result = try transactionIntermediate.send(password: password)
             print(result)
-            return true
+            return "success"
         } catch let error{
             print("UserNotFound")
             print(error)
+            return "\(error)"
         }
-        return false
     }
     
     

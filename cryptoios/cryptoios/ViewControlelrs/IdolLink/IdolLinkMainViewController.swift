@@ -10,12 +10,16 @@ import UIKit
 
 class IdolLinkMainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, IdolLinkMainHeaderDelegate
 {
+    
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var flowLayout: UICollectionViewFlowLayout!
 
     let cellIdentifier = "IdolCell"
     let headerIdentifier = "headerView"
-    var cards : [String:Any]!;
+    var cards : [String:Any]!
+    
+    var linkidol:Linkidol = Linkidol()
+    var cardcount:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,10 +34,18 @@ class IdolLinkMainViewController: UIViewController, UICollectionViewDelegate, UI
         let json = try? JSONSerialization.jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments)
         cards = json as? [String:Any]
         
+        let queue = OperationQueue()
+        queue.addOperation {[unowned self] () -> Void in
+            self.cardcount = self.linkidol.getLeftCardsCount()
+            OperationQueue.main.addOperation({[unowned self] () -> Void in
+                self.collectionView.reloadData()
+            })
+        }
     }
 
     func OnTapDrawCard(_ header: IdolLinkMainHeader) {
         let vc = IdolDrawCardViewController();
+        vc.cardCount = self.cardcount
         navigationController?.pushViewController(vc, animated: true);
     }
     
@@ -45,6 +57,9 @@ class IdolLinkMainViewController: UIViewController, UICollectionViewDelegate, UI
     func OnTapShare(_ header: IdolLinkMainHeader) {
         let vc = IdolShareViewController();
         navigationController?.pushViewController(vc, animated: true);
+    }
+    func OnTapCollection(_ header: IdolLinkMainHeader) {
+        
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -81,6 +96,7 @@ class IdolLinkMainViewController: UIViewController, UICollectionViewDelegate, UI
         
         let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerView", for: indexPath) as! IdolLinkMainHeader
         view.delegate = self;
+        view.cardcount.text = "卡包内剩余\(self.cardcount)张"
         return view;
     }
     

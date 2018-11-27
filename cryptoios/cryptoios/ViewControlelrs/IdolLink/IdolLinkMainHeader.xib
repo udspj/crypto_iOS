@@ -20,19 +20,11 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home_girls" translatesAutoresizingMaskIntoConstraints="NO" id="Fpq-e1-tx8">
-                    <rect key="frame" x="-12" y="0.0" width="419" height="178"/>
+                    <rect key="frame" x="33" y="4" width="354" height="150"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fZ-1j-YPh">
-                    <rect key="frame" x="45" y="166" width="62" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="推荐好友"/>
-                    <connections>
-                        <action selector="tapShare:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="aXL-uB-occ"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3o-mI-Vab">
-                    <rect key="frame" x="310" y="166" width="46" height="30"/>
+                    <rect key="frame" x="268" y="166" width="46" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="排行榜"/>
                     <connections>
@@ -47,15 +39,34 @@
                         <action selector="tapDrawCard:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="gjp-XN-9jg"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KE-aJ-KdX">
+                    <rect key="frame" x="51" y="166" width="62" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="我的收藏"/>
+                    <connections>
+                        <action selector="tapCollection:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="OM8-aj-lBk"/>
+                    </connections>
+                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="卡包内剩余 0 张卡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDZ-9h-vSr">
-                    <rect key="frame" x="133" y="214" width="141" height="48"/>
+                    <rect key="frame" x="133" y="207" width="141" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.08235294118" green="0.4823529412" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fZ-1j-YPh">
+                    <rect key="frame" x="331" y="166" width="62" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="推荐好友"/>
+                    <connections>
+                        <action selector="tapShare:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="aXL-uB-occ"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="cardcount" destination="vDZ-9h-vSr" id="ksU-EH-hEy"/>
+            </connections>
             <point key="canvasLocation" x="60" y="185.30734632683661"/>
         </collectionReusableView>
     </objects>

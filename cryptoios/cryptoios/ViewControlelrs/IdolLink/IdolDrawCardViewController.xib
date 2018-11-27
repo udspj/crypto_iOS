@@ -11,8 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IdolDrawCardViewController" customModule="cryptoios" customModuleProvider="target">
             <connections>
+                <outlet property="btn" destination="Exw-ev-eub" id="Lsx-51-Zu2"/>
                 <outlet property="label1" destination="HMQ-ko-QvC" id="daZ-js-DVY"/>
                 <outlet property="label2" destination="5GR-zp-cqq" id="ibT-7v-CzL"/>
+                <outlet property="loadingLabel" destination="52v-gr-Aq2" id="0d1-QP-6lc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,67 +37,23 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="N63-5U-jrg">
-                    <rect key="frame" x="16" y="323" width="65" height="310"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exw-ev-eub">
+                    <rect key="frame" x="137" y="267" width="100" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exw-ev-eub">
-                            <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
-                            <color key="backgroundColor" red="0.1333333333" green="0.80784313730000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="抽1张"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZE-QE-i9o">
-                            <rect key="frame" x="0.0" y="35" width="65" height="30"/>
-                            <color key="backgroundColor" red="0.1333333333" green="0.80784313730000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="抽3张"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMv-Fj-wjf">
-                            <rect key="frame" x="0.0" y="70" width="65" height="30"/>
-                            <color key="backgroundColor" red="0.1333333333" green="0.80784313730000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="抽6张"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CG-n9-Y4X">
-                            <rect key="frame" x="0.0" y="105" width="65" height="30"/>
-                            <color key="backgroundColor" red="0.1333333333" green="0.80784313730000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="抽9张"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxA-2u-TpY">
-                            <rect key="frame" x="0.0" y="140" width="65" height="30"/>
-                            <color key="backgroundColor" red="0.1333333333" green="0.80784313730000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="抽12张"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHW-6M-twP">
-                            <rect key="frame" x="0.0" y="175" width="65" height="30"/>
-                            <color key="backgroundColor" red="0.1333333333" green="0.80784313730000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="抽16张"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zca-xe-szm">
-                            <rect key="frame" x="0.0" y="210" width="65" height="30"/>
-                            <color key="backgroundColor" red="0.1333333333" green="0.80784313730000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="抽20张"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dft-B2-zTj">
-                            <rect key="frame" x="0.0" y="245" width="65" height="30"/>
-                            <color key="backgroundColor" red="0.1333333333" green="0.80784313730000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="抽120张"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjE-lK-f6i">
-                            <rect key="frame" x="0.0" y="280" width="65" height="30"/>
-                            <color key="backgroundColor" red="0.1333333333" green="0.80784313730000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="抽1024张"/>
-                        </button>
-                    </subviews>
-                    <viewLayoutGuide key="safeArea" id="fO4-GO-VVi"/>
-                </stackView>
+                    <color key="backgroundColor" red="0.1333333333" green="0.80784313730000001" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="确定抽卡"/>
+                    <connections>
+                        <action selector="drawCard:" destination="-1" eventType="touchUpInside" id="OuO-SA-tYo"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正在抽卡……请勿操作关闭应用" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52v-gr-Aq2">
+                    <rect key="frame" x="70" y="323" width="235" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
