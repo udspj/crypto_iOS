@@ -28,40 +28,55 @@
                         <constraint firstAttribute="height" constant="200" id="WyN-te-scx"/>
                     </constraints>
                 </imageView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="c0b-Q3-Pme">
-                    <rect key="frame" x="92" y="210" width="191" height="400"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="c0b-Q3-Pme">
+                    <rect key="frame" x="92" y="208" width="191" height="408"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cly-v5-aU4">
                             <rect key="frame" x="0.0" y="0.0" width="191" height="72"/>
-                            <state key="normal" title="图鉴" image="shuihu/btn"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                            <state key="normal" title="图鉴" backgroundImage="shuihu/btn">
+                                <color key="titleColor" red="0.88957938759999999" green="0.88957938759999999" blue="0.88957938759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="tapWiki:" destination="-1" eventType="touchUpInside" id="5C0-Xp-pei"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="245" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h6-Ub-77F">
-                            <rect key="frame" x="0.0" y="82" width="191" height="72"/>
-                            <state key="normal" image="shuihu/btn"/>
+                            <rect key="frame" x="0.0" y="84" width="191" height="72"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                            <state key="normal" title="立即抽卡" backgroundImage="shuihu/btn">
+                                <color key="titleColor" red="0.88957938759999999" green="0.88957938759999999" blue="0.88957938759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="tapDrawCard:" destination="-1" eventType="touchUpInside" id="2t6-Av-imH"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhG-H5-ZnV">
-                            <rect key="frame" x="0.0" y="164" width="191" height="72"/>
-                            <state key="normal" title="交易区" image="shuihu/btn"/>
+                            <rect key="frame" x="0.0" y="168" width="191" height="72"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                            <state key="normal" title="交易区" backgroundImage="shuihu/btn">
+                                <color key="titleColor" red="0.88957938759999999" green="0.88957938759999999" blue="0.88957938759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="tapTrans:" destination="-1" eventType="touchUpInside" id="uQw-4R-fep"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLA-WG-LBB">
-                            <rect key="frame" x="0.0" y="246" width="191" height="72"/>
-                            <state key="normal" title="推荐" image="shuihu/btn"/>
+                            <rect key="frame" x="0.0" y="252" width="191" height="72"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                            <state key="normal" title="推荐" backgroundImage="shuihu/btn">
+                                <color key="titleColor" red="0.88957938759999999" green="0.88957938759999999" blue="0.88957938759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="tapShare:" destination="-1" eventType="touchUpInside" id="CmL-gf-GE7"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChI-aQ-War">
-                            <rect key="frame" x="0.0" y="328" width="191" height="72"/>
-                            <state key="normal" title="排行榜" image="shuihu/btn"/>
+                            <rect key="frame" x="0.0" y="336" width="191" height="72"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                            <state key="normal" title="排行榜" backgroundImage="shuihu/btn">
+                                <color key="titleColor" red="0.88957938759999999" green="0.88957938759999999" blue="0.88957938759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="tapRank:" destination="-1" eventType="touchUpInside" id="Jdu-Pm-drv"/>
                             </connections>
@@ -81,7 +96,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tTr-5U-Li8" secondAttribute="trailing" id="VdY-rh-zhu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AYP-Ub-7iV" secondAttribute="bottom" id="ZLt-ks-GWR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AYP-Ub-7iV" secondAttribute="trailing" id="a95-aq-dRs"/>
-                <constraint firstItem="c0b-Q3-Pme" firstAttribute="top" secondItem="tTr-5U-Li8" secondAttribute="bottom" priority="999" constant="10" id="cPs-0O-aEb"/>
+                <constraint firstItem="c0b-Q3-Pme" firstAttribute="top" secondItem="tTr-5U-Li8" secondAttribute="bottom" priority="999" constant="8" symbolic="YES" id="cPs-0O-aEb"/>
                 <constraint firstItem="tTr-5U-Li8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ftQ-Ch-6lR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="tTr-5U-Li8" secondAttribute="top" constant="20" id="ggv-IQ-JfS"/>
             </constraints>
