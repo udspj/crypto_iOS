@@ -48,8 +48,8 @@ class Linkidol: NSObject {
             let transactionIntermediate = try contract.method("tokensOf", parameters:[address] as [AnyObject], options: options)
             let result = try transactionIntermediate.call(options: options)
             let res = result["0"]! as! NSArray
-            print(res)
-            print(type(of: res))
+//            print(res)
+//            print(type(of: res))
             let types = res.map { token -> Int in
                 let type = getCardsType(cardid: token)
                 return type
