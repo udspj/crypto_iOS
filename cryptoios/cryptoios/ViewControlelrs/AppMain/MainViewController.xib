@@ -73,7 +73,6 @@
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xS-EW-tyL">
                                             <rect key="frame" x="0.0" y="0.0" width="186.5" height="323.5"/>
-                                            <state key="normal" title="以太萌王"/>
                                             <connections>
                                                 <action selector="tapMoe:" destination="-1" eventType="touchUpInside" id="fDV-7W-NuC"/>
                                             </connections>
