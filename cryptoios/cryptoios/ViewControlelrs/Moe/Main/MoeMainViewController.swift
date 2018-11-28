@@ -40,7 +40,7 @@ class MoeMainViewController: UIViewController,UICollectionViewDelegate, UICollec
                 let type = self?.moe.getItemInfo(itemid: token)
                 return type ?? ("",0.0,0.0,"")
             }
-            print(types)
+//            print(types)
             self?.moelist = types
             OperationQueue.main.addOperation({ () -> Void in
                 collectionView.reloadData()
@@ -82,10 +82,10 @@ class MoeMainViewController: UIViewController,UICollectionViewDelegate, UICollec
         var priceETH = "=="
         if(moelist.count > 0){
             ownerAddr = moelist[indexPath.item].0
-            priceETH = String(format:"%.5f", moelist[indexPath.item].1)
+            priceETH = String(format:"%.4f", moelist[indexPath.item].1)
         }
         cell.ownerLabel.text = "拥有者：\(ownerAddr)"
-        cell.priceLabel.text = "\(priceETH)eth"
+        cell.priceLabel.text = "\(priceETH) ETH"
         
         do { // shadow
             cell.contentView.layer.cornerRadius = 2.0
