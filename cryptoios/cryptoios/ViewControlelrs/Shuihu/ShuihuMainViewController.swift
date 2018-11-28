@@ -15,8 +15,7 @@ class ShuihuMainViewController: UIViewController {
     }
     
     @IBAction func tapDrawCard(_ sender: Any) {
-//        let vc = ShuihuDrawCardViewController();
-        let vc = IdolDrawCardViewController()
+        let vc = ShuihuDrawCardViewController();
         navigationController?.pushViewController(vc, animated: true);
     }
     

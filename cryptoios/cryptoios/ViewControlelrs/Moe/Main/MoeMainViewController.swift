@@ -6,9 +6,21 @@ class MoeMainViewController: UIViewController,UICollectionViewDelegate, UICollec
     let headerIdentifier = "headerView"
     var cards : [String:Any]!;
     
+    var moe:Moeking = Moeking()
+    
     @IBOutlet var flowLayout: UICollectionViewFlowLayout!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let cardlimit = moe.getTotalSupply()
+        print(cardlimit)
+        print(moe.getItemIds(limit: cardlimit))
+        moe.getItemInfo(itemid: 1)
+        
+        
+        
+        
+        
         title = "以太萌王"
         let collectionView = view as! UICollectionView
         

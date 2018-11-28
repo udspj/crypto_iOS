@@ -14,7 +14,7 @@ class MeMainViewController: UIViewController {
     var userDir : String?
     var keystoreManager : KeystoreManager?
     var bip32keystoreManager : KeystoreManager?
-    var bigint:Double = 100000000000000000
+//    var bigint:Double = 100000000000000000
     var usermanager:UserManager = UserManager()
     var linkidol:Linkidol = Linkidol()
     
@@ -30,8 +30,8 @@ class MeMainViewController: UIViewController {
         queue.addOperation { () -> Void in
             let balance: BigUInt = try! web3Main.eth.getBalance(address: addr!)
             OperationQueue.main.addOperation({[unowned self] () -> Void in
-                print(Double(balance.words[0])/self.bigint)
-                self.balLabel.text = "余额："+String(Double(balance.words[0])/self.bigint)+" eth"
+//                print(Double(balance.words[0])/self.bigint)
+                self.balLabel.text = "余额："+String(Utils.convertWeiToETH(wei: Double(balance.words[0])))+" eth"
             })
         }
         

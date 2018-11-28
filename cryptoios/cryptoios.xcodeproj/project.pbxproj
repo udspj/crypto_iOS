@@ -87,6 +87,9 @@
 		71EBF74E21A5451B0026B621 /* AddAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71EBF74D21A5451B0026B621 /* AddAccountViewController.xib */; };
 		71EBF75021AC29D10026B621 /* Linkidol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EBF74F21AC29D10026B621 /* Linkidol.swift */; };
 		71EBF75221AD86460026B621 /* CollectIdolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EBF75121AD86460026B621 /* CollectIdolViewController.swift */; };
+		71EBF75421AE80A60026B621 /* Shuihu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EBF75321AE80A60026B621 /* Shuihu.swift */; };
+		71EBF75621AEA4650026B621 /* Moeking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EBF75521AEA4650026B621 /* Moeking.swift */; };
+		71EBF75821AEB1230026B621 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EBF75721AEB1230026B621 /* Utils.swift */; };
 		D527C6A44367E720F8326B2C /* Pods_cryptoios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE4CB8FCB0AA52C230FD388 /* Pods_cryptoios.framework */; };
 /* End PBXBuildFile section */
 
@@ -174,6 +177,9 @@
 		71EBF74D21A5451B0026B621 /* AddAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAccountViewController.xib; sourceTree = "<group>"; };
 		71EBF74F21AC29D10026B621 /* Linkidol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Linkidol.swift; sourceTree = "<group>"; };
 		71EBF75121AD86460026B621 /* CollectIdolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectIdolViewController.swift; sourceTree = "<group>"; };
+		71EBF75321AE80A60026B621 /* Shuihu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shuihu.swift; sourceTree = "<group>"; };
+		71EBF75521AEA4650026B621 /* Moeking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moeking.swift; sourceTree = "<group>"; };
+		71EBF75721AEB1230026B621 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		AAA59CE92C74F509FF0CADFE /* Pods-cryptoios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoios.release.xcconfig"; path = "Pods/Target Support Files/Pods-cryptoios/Pods-cryptoios.release.xcconfig"; sourceTree = "<group>"; };
 		D3B871BB9BC0EC91B8AE78CE /* Pods-cryptoios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cryptoios/Pods-cryptoios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -437,6 +443,9 @@
 			children = (
 				71EBF74921A43B3C0026B621 /* UserManager.swift */,
 				71EBF74F21AC29D10026B621 /* Linkidol.swift */,
+				71EBF75321AE80A60026B621 /* Shuihu.swift */,
+				71EBF75521AEA4650026B621 /* Moeking.swift */,
+				71EBF75721AEB1230026B621 /* Utils.swift */,
 			);
 			path = Web3Manager;
 			sourceTree = "<group>";
@@ -614,6 +623,7 @@
 				43F0E1D921AC546A003798A1 /* SanguoStoreKapaiCell.swift in Sources */,
 				43E7FFDC21848F6D00FA2F3D /* SanguoStoreViewController.swift in Sources */,
 				43E7FFF42184921A00FA2F3D /* IdolDrawCardViewController.swift in Sources */,
+				71EBF75421AE80A60026B621 /* Shuihu.swift in Sources */,
 				43E7FFCA21848AAF00FA2F3D /* IdolLinkMainViewController.swift in Sources */,
 				43E7000C2184963C00FA2F3D /* ShuihuDrawCardViewController.swift in Sources */,
 				4362179E21AC2C0F00182F0D /* MoeMainHeadView.swift in Sources */,
@@ -631,12 +641,14 @@
 				43E7FFE421848FA200FA2F3D /* SanguoTransViewController.swift in Sources */,
 				43E7FFFC2184923D00FA2F3D /* IdolShareViewController.swift in Sources */,
 				43E7FFBD2184896700FA2F3D /* SanguoMainViewController.swift in Sources */,
+				71EBF75821AEB1230026B621 /* Utils.swift in Sources */,
 				71EBF74C21A5450B0026B621 /* AddAccountViewController.swift in Sources */,
 				43E7FFE021848F8800FA2F3D /* SanguoWikiViewController.swift in Sources */,
 				43E700082184962E00FA2F3D /* ShuihuWikiViewController.swift in Sources */,
 				43E7FFEC2184914900FA2F3D /* SanguoDrawCardViewController.swift in Sources */,
 				43E700102184964E00FA2F3D /* ShuihuShareViewController.swift in Sources */,
 				43E7FFE821848FBE00FA2F3D /* SanguoHeroDetailViewController.swift in Sources */,
+				71EBF75621AEA4650026B621 /* Moeking.swift in Sources */,
 				43E7FFF82184922D00FA2F3D /* IdolRankViewController.swift in Sources */,
 				43E7FF9C2184534D00FA2F3D /* AppDelegate.swift in Sources */,
 				43E7FFC121848A7400FA2F3D /* ShuihuMainViewController.swift in Sources */,
