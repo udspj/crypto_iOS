@@ -7,31 +7,50 @@ class MoeMainViewController: UIViewController,UICollectionViewDelegate, UICollec
     var cards : [String:Any]!;
     
     var moe:Moeking = Moeking()
+    var moelist:[(owner: String, nowprice: Double, nextprice: Double, freedate: String)] = []
     
     @IBOutlet var flowLayout: UICollectionViewFlowLayout!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let cardlimit = moe.getTotalSupply()
-        print(cardlimit)
-        print(moe.getItemIds(limit: cardlimit))
-        moe.getItemInfo(itemid: 1)
-        
-        
-        
-        
-        
         title = "以太萌王"
+        
         let collectionView = view as! UICollectionView
         
         collectionView.register(UINib(nibName:"MoeCardCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
         collectionView.register(UINib(nibName: "MoeMainHeadView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerIdentifier)
         
-        
-        
         let asset = NSDataAsset(name:"cards",bundle:Bundle.main);
         let json = try? JSONSerialization.jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments)
         cards = json as? [String:Any]
+        
+        
+        var cardlimit = 0
+        var itemids:[Int] = []
+        
+        let queue = OperationQueue()
+        let operationA = BlockOperation {[weak self] () -> Void in
+            cardlimit = self?.moe.getTotalSupply() ?? 0
+        }
+        let operationB = BlockOperation {[weak self] () -> Void in
+            itemids = self?.moe.getItemIds(limit: cardlimit) ?? []
+        }
+        let operationC = BlockOperation {[weak self] () -> Void in
+            let types = itemids.map { token -> (owner: String, nowprice: Double, nextprice: Double, freedate: String) in
+                let type = self?.moe.getItemInfo(itemid: token)
+                return type ?? ("",0.0,0.0,"")
+            }
+            print(types)
+            self?.moelist = types
+            OperationQueue.main.addOperation({ () -> Void in
+                collectionView.reloadData()
+            })
+        }
+        operationB.addDependency(operationA)
+        operationC.addDependency(operationB)
+        queue.addOperation(operationA)
+        queue.addOperation(operationB)
+        queue.addOperation(operationC)
     }
 
     @IBAction func tapCard(_ sender: Any) {
@@ -59,8 +78,14 @@ class MoeMainViewController: UIViewController,UICollectionViewDelegate, UICollec
         let name = obj["name"] as! String
         cell.titleLabel.text = "\(nickname)|\(name)"
         cell.descLabel.text = obj["introduce"] as?String
-        let ownerAddr = "FDAC"
+        var ownerAddr = "=="
+        var priceETH = "=="
+        if(moelist.count > 0){
+            ownerAddr = moelist[indexPath.item].0
+            priceETH = String(format:"%.5f", moelist[indexPath.item].1)
+        }
         cell.ownerLabel.text = "拥有者：\(ownerAddr)"
+        cell.priceLabel.text = "\(priceETH)eth"
         
         do { // shadow
             cell.contentView.layer.cornerRadius = 2.0

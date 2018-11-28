@@ -50,7 +50,7 @@ class Moeking: NSObject {
         return []
     }
     
-    internal func getItemInfo(itemid: Int) {
+    internal func getItemInfo(itemid: Int) -> (owner: String, nowprice: Double, nextprice: Double, freedate: String) {
         do {
             let address = usermanager.getUserAddress()
             let contract = try infura.contract(abi, at: self.contract)
@@ -58,26 +58,35 @@ class Moeking: NSObject {
             options.from = address
             let transactionIntermediate = try contract.method("allOf", parameters:[itemid] as [AnyObject], options: options)
             let result = try transactionIntermediate.call(options: options)
-            print(result["0"])
-            print(result["1"])
-            print(result["2"])
-            print(result["3"])
+//            print(result["0"])
+//            print(result["1"])
+//            print(result["2"])
+//            print(result["3"])
             var owner = "\(result["0"]!)"
 //            owner = String(owner[..<owner.index(owner.startIndex, offsetBy: 8)])
             let start = owner.index(owner.startIndex, offsetBy: 2)
             let end = owner.index(owner.endIndex, offsetBy: -34)
             let range = start..<end
             owner = String(owner[range])
+            
             let nowprice = Double("\(result["1"]!)")
             let nextprice = Double("\(result["2"]!)")
-            let freetime = result["3"]!
-            print(owner)
-            print(Utils.convertWeiToETH(wei: nowprice!))
-            print(Utils.convertWeiToETH(wei: nextprice!))
+            let nowp = Utils.convertWeiToETH(wei: nowprice!)
+            let nextp = Utils.convertWeiToETH(wei: nextprice!)
+            
+            let freetime = "\(result["3"]!)"
+            let interval = TimeInterval(freetime)
+            let date = NSDate(timeIntervalSince1970: interval!)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            let nowDate = dateFormatter.string(from: date as Date)
+            
+            return (owner,nowp,nextp,"\(nowDate)")
         } catch let error{
             print("UserNotFound")
             print(error)
         }
+        return ("",0.0,0.0,"")
     }
     
     //    private func getCardsType(cardid:Any) -> Int {
