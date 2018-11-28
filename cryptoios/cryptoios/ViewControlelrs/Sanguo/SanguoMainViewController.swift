@@ -28,7 +28,7 @@ class SanguoMainViewController: UIViewController {
     }
     
     @IBAction func tapTrans(_ sender: Any) {
-        let vc = SanguoTransViewController();
+        let vc = TransactionViewController()
         navigationController?.pushViewController(vc, animated: true);
     }
 }

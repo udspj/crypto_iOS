@@ -24,6 +24,12 @@
 		43ADBC582195E13700214B55 /* TujianCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADBC562195E13700214B55 /* TujianCell.swift */; };
 		43ADBC592195E13700214B55 /* TujianCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43ADBC572195E13700214B55 /* TujianCell.xib */; };
 		43ADBC5B2198254400214B55 /* Sanguo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43ADBC5A2198254400214B55 /* Sanguo.xcassets */; };
+		43E6EAA421AE725E009819B2 /* AssetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E6EAA221AE725E009819B2 /* AssetDetailViewController.swift */; };
+		43E6EAA521AE725E009819B2 /* AssetDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6EAA321AE725E009819B2 /* AssetDetailViewController.xib */; };
+		43E6EAA921AEABAA009819B2 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E6EAA721AEABAA009819B2 /* TransactionCell.swift */; };
+		43E6EAAA21AEABAA009819B2 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6EAA821AEABAA009819B2 /* TransactionCell.xib */; };
+		43E6EAAD21AEB820009819B2 /* AssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E6EAAB21AEB820009819B2 /* AssetCell.swift */; };
+		43E6EAAE21AEB820009819B2 /* AssetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E6EAAC21AEB820009819B2 /* AssetCell.xib */; };
 		43E700002184924E00FA2F3D /* IdolDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFFE2184924E00FA2F3D /* IdolDetailViewController.swift */; };
 		43E700012184924E00FA2F3D /* IdolDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFFF2184924E00FA2F3D /* IdolDetailViewController.xib */; };
 		43E700042184961F00FA2F3D /* ShuihuRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E700022184961F00FA2F3D /* ShuihuRankViewController.swift */; };
@@ -58,8 +64,8 @@
 		43E7FFD021848B0A00FA2F3D /* MeMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFCE21848B0A00FA2F3D /* MeMainViewController.xib */; };
 		43E7FFD321848D0400FA2F3D /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFD121848D0400FA2F3D /* TransactionViewController.swift */; };
 		43E7FFD421848D0400FA2F3D /* TransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFD221848D0400FA2F3D /* TransactionViewController.xib */; };
-		43E7FFD821848D1C00FA2F3D /* AssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFD621848D1C00FA2F3D /* AssetsViewController.swift */; };
-		43E7FFD921848D1C00FA2F3D /* AssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFD721848D1C00FA2F3D /* AssetsViewController.xib */; };
+		43E7FFD821848D1C00FA2F3D /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFD621848D1C00FA2F3D /* ProductsListViewController.swift */; };
+		43E7FFD921848D1C00FA2F3D /* ProductsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFD721848D1C00FA2F3D /* ProductsListViewController.xib */; };
 		43E7FFDC21848F6D00FA2F3D /* SanguoStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFDA21848F6D00FA2F3D /* SanguoStoreViewController.swift */; };
 		43E7FFDD21848F6D00FA2F3D /* SanguoStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E7FFDB21848F6D00FA2F3D /* SanguoStoreViewController.xib */; };
 		43E7FFE021848F8800FA2F3D /* SanguoWikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7FFDE21848F8800FA2F3D /* SanguoWikiViewController.swift */; };
@@ -112,6 +118,12 @@
 		43ADBC562195E13700214B55 /* TujianCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TujianCell.swift; sourceTree = "<group>"; };
 		43ADBC572195E13700214B55 /* TujianCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TujianCell.xib; sourceTree = "<group>"; };
 		43ADBC5A2198254400214B55 /* Sanguo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sanguo.xcassets; sourceTree = "<group>"; };
+		43E6EAA221AE725E009819B2 /* AssetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailViewController.swift; sourceTree = "<group>"; };
+		43E6EAA321AE725E009819B2 /* AssetDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetDetailViewController.xib; sourceTree = "<group>"; };
+		43E6EAA721AEABAA009819B2 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		43E6EAA821AEABAA009819B2 /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		43E6EAAB21AEB820009819B2 /* AssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCell.swift; sourceTree = "<group>"; };
+		43E6EAAC21AEB820009819B2 /* AssetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetCell.xib; sourceTree = "<group>"; };
 		43E700022184961F00FA2F3D /* ShuihuRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuihuRankViewController.swift; sourceTree = "<group>"; };
 		43E700032184961F00FA2F3D /* ShuihuRankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShuihuRankViewController.xib; sourceTree = "<group>"; };
 		43E700062184962E00FA2F3D /* ShuihuWikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuihuWikiViewController.swift; sourceTree = "<group>"; };
@@ -146,8 +158,8 @@
 		43E7FFCE21848B0A00FA2F3D /* MeMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeMainViewController.xib; sourceTree = "<group>"; };
 		43E7FFD121848D0400FA2F3D /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		43E7FFD221848D0400FA2F3D /* TransactionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionViewController.xib; sourceTree = "<group>"; };
-		43E7FFD621848D1C00FA2F3D /* AssetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsViewController.swift; sourceTree = "<group>"; };
-		43E7FFD721848D1C00FA2F3D /* AssetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetsViewController.xib; sourceTree = "<group>"; };
+		43E7FFD621848D1C00FA2F3D /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
+		43E7FFD721848D1C00FA2F3D /* ProductsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsListViewController.xib; sourceTree = "<group>"; };
 		43E7FFDA21848F6D00FA2F3D /* SanguoStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoStoreViewController.swift; sourceTree = "<group>"; };
 		43E7FFDB21848F6D00FA2F3D /* SanguoStoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SanguoStoreViewController.xib; sourceTree = "<group>"; };
 		43E7FFDE21848F8800FA2F3D /* SanguoWikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanguoWikiViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +280,28 @@
 				43ADBC572195E13700214B55 /* TujianCell.xib */,
 			);
 			path = Tujian;
+			sourceTree = "<group>";
+		};
+		43E6EAA121AE723C009819B2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				43E6EAA221AE725E009819B2 /* AssetDetailViewController.swift */,
+				43E6EAA321AE725E009819B2 /* AssetDetailViewController.xib */,
+				43E6EAAB21AEB820009819B2 /* AssetCell.swift */,
+				43E6EAAC21AEB820009819B2 /* AssetCell.xib */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		43E6EAA621AE7298009819B2 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				43E7FFD121848D0400FA2F3D /* TransactionViewController.swift */,
+				43E7FFD221848D0400FA2F3D /* TransactionViewController.xib */,
+				43E6EAA721AEABAA009819B2 /* TransactionCell.swift */,
+				43E6EAA821AEABAA009819B2 /* TransactionCell.xib */,
+			);
+			path = Transaction;
 			sourceTree = "<group>";
 		};
 		43E7FF8F2184534D00FA2F3D = {
@@ -396,12 +430,12 @@
 		43E7FFCC21848AFB00FA2F3D /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				43E6EAA621AE7298009819B2 /* Transaction */,
+				43E6EAA121AE723C009819B2 /* Assets */,
 				43E7FFCD21848B0A00FA2F3D /* MeMainViewController.swift */,
 				43E7FFCE21848B0A00FA2F3D /* MeMainViewController.xib */,
-				43E7FFD121848D0400FA2F3D /* TransactionViewController.swift */,
-				43E7FFD221848D0400FA2F3D /* TransactionViewController.xib */,
-				43E7FFD621848D1C00FA2F3D /* AssetsViewController.swift */,
-				43E7FFD721848D1C00FA2F3D /* AssetsViewController.xib */,
+				43E7FFD621848D1C00FA2F3D /* ProductsListViewController.swift */,
+				43E7FFD721848D1C00FA2F3D /* ProductsListViewController.xib */,
 				71EBF74B21A5450B0026B621 /* AddAccountViewController.swift */,
 				71EBF74D21A5451B0026B621 /* AddAccountViewController.xib */,
 				71EBF75121AD86460026B621 /* CollectIdolViewController.swift */,
@@ -513,6 +547,7 @@
 				43E7FFDD21848F6D00FA2F3D /* SanguoStoreViewController.xib in Resources */,
 				43F0E1DA21AC546A003798A1 /* SanguoStoreKapaiCell.xib in Resources */,
 				43E7FFA62184534F00FA2F3D /* LaunchScreen.storyboard in Resources */,
+				43E6EAAE21AEB820009819B2 /* AssetCell.xib in Resources */,
 				43ADBC482193408200214B55 /* IdolDetailTableViewCell.xib in Resources */,
 				43E7FFA32184534F00FA2F3D /* Assets.xcassets in Resources */,
 				43E7001F2188A50E00FA2F3D /* IdolLinkCell.xib in Resources */,
@@ -530,9 +565,10 @@
 				43E7001B21871BF800FA2F3D /* IdolLink.xcassets in Resources */,
 				4362179B21AAB91A00182F0D /* SanguoWikiTableViewCell.xib in Resources */,
 				43E700092184962E00FA2F3D /* ShuihuWikiViewController.xib in Resources */,
+				43E6EAAA21AEABAA009819B2 /* TransactionCell.xib in Resources */,
 				43E7FFBE2184896700FA2F3D /* SanguoMainViewController.xib in Resources */,
 				43E7FFE521848FA200FA2F3D /* SanguoTransViewController.xib in Resources */,
-				43E7FFD921848D1C00FA2F3D /* AssetsViewController.xib in Resources */,
+				43E7FFD921848D1C00FA2F3D /* ProductsListViewController.xib in Resources */,
 				43ADBC4D2194652E00214B55 /* Moe.xcassets in Resources */,
 				43E7FFE121848F8800FA2F3D /* SanguoWikiViewController.xib in Resources */,
 				43E7FFF52184921A00FA2F3D /* IdolDrawCardViewController.xib in Resources */,
@@ -546,6 +582,7 @@
 				43E700192184973100FA2F3D /* ShuihuCardDetailViewController.xib in Resources */,
 				43E7FFE921848FBE00FA2F3D /* SanguoHeroDetailViewController.xib in Resources */,
 				43ADBC5B2198254400214B55 /* Sanguo.xcassets in Resources */,
+				43E6EAA521AE725E009819B2 /* AssetDetailViewController.xib in Resources */,
 				43E7FFD421848D0400FA2F3D /* TransactionViewController.xib in Resources */,
 				4346B24621A19911006A2CFD /* HeroAttCollectionViewCell.xib in Resources */,
 				4362179F21AC2C0F00182F0D /* MoeMainHeadView.xib in Resources */,
@@ -617,7 +654,7 @@
 				43E7FFC521848A8100FA2F3D /* MoeMainViewController.swift in Sources */,
 				43ADBC472193408200214B55 /* IdolDetailTableViewCell.swift in Sources */,
 				43ADBC5121949C9C00214B55 /* MoeCardCell.swift in Sources */,
-				43E7FFD821848D1C00FA2F3D /* AssetsViewController.swift in Sources */,
+				43E7FFD821848D1C00FA2F3D /* ProductsListViewController.swift in Sources */,
 				4346B24521A19911006A2CFD /* HeroAttCollectionViewCell.swift in Sources */,
 				43ADBC422193342900214B55 /* IdolLinkMainHeader.swift in Sources */,
 				43F0E1D921AC546A003798A1 /* SanguoStoreKapaiCell.swift in Sources */,
@@ -628,9 +665,11 @@
 				43E7000C2184963C00FA2F3D /* ShuihuDrawCardViewController.swift in Sources */,
 				4362179E21AC2C0F00182F0D /* MoeMainHeadView.swift in Sources */,
 				43E700142184965D00FA2F3D /* ShuihuTransViewController.swift in Sources */,
+				43E6EAA921AEABAA009819B2 /* TransactionCell.swift in Sources */,
 				43E700042184961F00FA2F3D /* ShuihuRankViewController.swift in Sources */,
 				43E700002184924E00FA2F3D /* IdolDetailViewController.swift in Sources */,
 				4362179A21AAB91A00182F0D /* SanguoWikiTableViewCell.swift in Sources */,
+				43E6EAAD21AEB820009819B2 /* AssetCell.swift in Sources */,
 				71EBF75021AC29D10026B621 /* Linkidol.swift in Sources */,
 				43E700182184973100FA2F3D /* ShuihuCardDetailViewController.swift in Sources */,
 				43E7001E2188A50E00FA2F3D /* IdolLinkCell.swift in Sources */,
@@ -646,6 +685,7 @@
 				43E7FFE021848F8800FA2F3D /* SanguoWikiViewController.swift in Sources */,
 				43E700082184962E00FA2F3D /* ShuihuWikiViewController.swift in Sources */,
 				43E7FFEC2184914900FA2F3D /* SanguoDrawCardViewController.swift in Sources */,
+				43E6EAA421AE725E009819B2 /* AssetDetailViewController.swift in Sources */,
 				43E700102184964E00FA2F3D /* ShuihuShareViewController.swift in Sources */,
 				43E7FFE821848FBE00FA2F3D /* SanguoHeroDetailViewController.swift in Sources */,
 				71EBF75621AEA4650026B621 /* Moeking.swift in Sources */,

@@ -169,16 +169,21 @@ class MeMainViewController: UIViewController {
         let img = blockies.createImage(customScale: 10)
         
         avatarImageView.image = img
+        
+        avatarImageView.layer.masksToBounds = true;
+        avatarImageView.layer.cornerRadius = avatarImageView.bounds.size.height/2;
     }
 
 
     @IBAction func tapTrans(_ sender: Any) {
-        let vc = TransactionViewController();
+        let vc = ProductsListViewController();
+        vc.Target = .Transaction
         navigationController?.pushViewController(vc, animated: true);
     }
     
     @IBAction func tapAsset(_ sender: Any) {
-        let vc = AssetsViewController();
+        let vc = ProductsListViewController();
+        vc.Target = .Assets
         navigationController?.pushViewController(vc, animated: true);
     }
     
